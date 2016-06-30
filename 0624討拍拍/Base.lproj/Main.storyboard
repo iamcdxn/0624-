@@ -52,10 +52,10 @@
             </objects>
             <point key="canvasLocation" x="1594.6875" y="-425.17605633802816"/>
         </scene>
-        <!--View Controller-->
+        <!--Scroll View Controller-->
         <scene sceneID="I4A-Bu-BlZ">
             <objects>
-                <viewController id="xa8-ss-bNR" sceneMemberID="viewController">
+                <viewController id="xa8-ss-bNR" customClass="ScrollViewController" customModule="_624討拍拍" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vO6-Or-EsW"/>
                         <viewControllerLayoutGuide type="bottom" id="6hV-xE-m4a"/>
@@ -63,13 +63,26 @@
                     <view key="view" contentMode="scaleToFill" id="2cA-hU-AMc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4jT-8X-pGE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="FuT-g9-VIe">
+                                        <rect key="frame" x="168" y="552" width="39" height="37"/>
+                                    </pageControl>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="FkL-wM-rMh"/>
+                    <connections>
+                        <outlet property="myScrollView" destination="4jT-8X-pGE" id="AyK-fQ-vvc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cgt-hT-Pwo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2519.0625" y="-425.17605633802816"/>
+            <point key="canvasLocation" x="2396.5" y="-425.5"/>
         </scene>
         <!--餐廳搜尋-->
         <scene sceneID="wg7-f3-ORb">
