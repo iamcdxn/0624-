@@ -129,7 +129,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-138.5" y="179.5"/>
         </scene>
         <!--語音查找-->
         <scene sceneID="U7y-MB-pSa">
@@ -150,7 +150,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8AT-fG-oOH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="399.73333333333335" y="-401.86000000000001"/>
+            <point key="canvasLocation" x="399.5" y="-402.5"/>
         </scene>
         <!--餐廳搜尋-->
         <scene sceneID="sYG-DK-1zb">
