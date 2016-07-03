@@ -6,6 +6,9 @@
 //  Copyright © 2016年 Uxpa_Everyday. All rights reserved.
 //
 
+
+// 搜尋結果的Custom Cell
+
 import UIKit
 
 class CustomCell: UITableViewCell {

@@ -1,22 +1,21 @@
 //
-//  CustomRestaurantCell.swift
+//  CustomMenuSeriesCell.swift
 //  0624討拍拍
 //
 //  Created by CdxN on 2016/7/4.
 //  Copyright © 2016年 Uxpa_Everyday. All rights reserved.
 //
 
-
-// 餐廳頁面的CustomCell
+// 食物類別頁面的CustomCell
 
 import UIKit
 
-class CustomRestaurantCell: UITableViewCell {
+class CustomMenuSeriesCell: UITableViewCell {
     
     
     @IBOutlet var Title: UILabel!
     
-    @IBOutlet var Content: UILabel!
+    @IBOutlet var Num: UILabel!
     
     
     override func awakeFromNib() {

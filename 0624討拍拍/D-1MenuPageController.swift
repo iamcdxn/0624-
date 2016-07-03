@@ -1,5 +1,5 @@
 //
-//  RestaurantPageController.swift
+//  D-1MenuPageController.swift
 //  0624討拍拍
 //
 //  Created by CdxN on 2016/7/4.
@@ -8,15 +8,15 @@
 
 import UIKit
 
-class ARestaurantPageController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class DMenuRestaurantPageController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var tableView: UITableView!
     
     
     var identities = [String]()
     
-    var titles = ["瀏覽菜單","近期優惠","店家電話","營業時間","距離捷運站","店家評價","平均價位","喜愛菜色","菜單更新時間","備註"]
-    var contents = [" "," ","02-2368-1065","1130-1430/1700-2100","公館四號五分鐘","3.9","85-105"," ","2015.10.14","無"]
+    var titles = ["手感吐司","法式烤布蕾吐司","熊巴鬆餅","熊巴早午餐","熊點心","飲品","黑熊咖啡","冰釀茶飲","花草茶飲"]
+    var contents = ["6項","7項","8項","6項","11項","8項","9項","8項","4項"]
     
     
     
@@ -24,7 +24,7 @@ class ARestaurantPageController: UIViewController, UITableViewDelegate, UITableV
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        identities = ["A-menu","A-sell"]
+        identities = ["D手感吐司","D法式烤布蕾吐司","D熊巴鬆餅","D熊巴早午餐","D熊點心","D飲品","D黑熊咖啡","D冰釀茶飲","D花草茶飲"]
         //尋找Storyboard的identities，Trigger SeguetableView	UITableView	0x000000012c8e1000
         
         
@@ -42,10 +42,10 @@ class ARestaurantPageController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! CustomRestaurantCell
+        let cell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! CustomMenuSeriesCell
         
         cell.Title.text = titles[indexPath.row]
-        cell.Content.text = contents[indexPath.row]
+        cell.Num.text = contents[indexPath.row]
         
         return cell
     }
@@ -59,7 +59,6 @@ class ARestaurantPageController: UIViewController, UITableViewDelegate, UITableV
     }
     
     
-
+    
     
 }
-

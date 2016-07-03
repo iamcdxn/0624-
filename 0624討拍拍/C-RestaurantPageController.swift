@@ -24,7 +24,7 @@ class CRestaurantPageController: UIViewController, UITableViewDelegate, UITableV
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        identities = ["A","B","C","D"]
+        identities = ["C-menu","C-sell"]
         //尋找Storyboard的identities，Trigger SeguetableView	UITableView	0x000000012c8e1000
         
         
