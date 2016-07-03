@@ -10,6 +10,8 @@ import UIKit
 
 class SpeakViewController: UIViewController {
 
+    @IBOutlet var SearchButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +23,12 @@ class SpeakViewController: UIViewController {
     }
 
 
+    @IBAction func SearchTuoch(sender: UIButton) {
+        performSegueWithIdentifier("SearchResultSegue", sender: self)
+        
+    }
+    
+
+    
 }
 

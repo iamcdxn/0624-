@@ -18,6 +18,13 @@
 		643812D71D1CE43B007D32A9 /* LikedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643812D61D1CE43B007D32A9 /* LikedViewController.swift */; };
 		643812D91D1CE475007D32A9 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643812D81D1CE475007D32A9 /* PersonalViewController.swift */; };
 		643B59BD1D2578B600535FEE /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B59BC1D2578B600535FEE /* ScrollViewController.swift */; };
+		643B5A751D295F0200535FEE /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B5A741D295F0200535FEE /* SearchResult.swift */; };
+		643B5A791D29626C00535FEE /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B5A781D29626C00535FEE /* CustomCell.swift */; };
+		643B5A7B1D298C3500535FEE /* CustomRestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B5A7A1D298C3500535FEE /* CustomRestaurantCell.swift */; };
+		643B5A7D1D298D5600535FEE /* A-RestaurantPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B5A7C1D298D5600535FEE /* A-RestaurantPageController.swift */; };
+		643B5A7F1D29981400535FEE /* B-RestaurantPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B5A7E1D29981400535FEE /* B-RestaurantPageController.swift */; };
+		643B5A811D29997000535FEE /* C-RestaurantPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B5A801D29997000535FEE /* C-RestaurantPageController.swift */; };
+		643B5A831D299AB700535FEE /* D-RestaurantPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B5A821D299AB700535FEE /* D-RestaurantPageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +62,13 @@
 		643812D61D1CE43B007D32A9 /* LikedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikedViewController.swift; sourceTree = "<group>"; };
 		643812D81D1CE475007D32A9 /* PersonalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
 		643B59BC1D2578B600535FEE /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		643B5A741D295F0200535FEE /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		643B5A781D29626C00535FEE /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		643B5A7A1D298C3500535FEE /* CustomRestaurantCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRestaurantCell.swift; sourceTree = "<group>"; };
+		643B5A7C1D298D5600535FEE /* A-RestaurantPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "A-RestaurantPageController.swift"; sourceTree = "<group>"; };
+		643B5A7E1D29981400535FEE /* B-RestaurantPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "B-RestaurantPageController.swift"; sourceTree = "<group>"; };
+		643B5A801D29997000535FEE /* C-RestaurantPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "C-RestaurantPageController.swift"; sourceTree = "<group>"; };
+		643B5A821D299AB700535FEE /* D-RestaurantPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "D-RestaurantPageController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +119,17 @@
 		643812A51D1CE177007D32A9 /* 0624討拍拍 */ = {
 			isa = PBXGroup;
 			children = (
+				643812AC1D1CE177007D32A9 /* Main.storyboard */,
 				643812A61D1CE177007D32A9 /* AppDelegate.swift */,
 				643812A81D1CE177007D32A9 /* SpeakViewController.swift */,
 				643812AA1D1CE177007D32A9 /* SearchViewController.swift */,
-				643812AC1D1CE177007D32A9 /* Main.storyboard */,
+				643B5A741D295F0200535FEE /* SearchResult.swift */,
+				643B5A7C1D298D5600535FEE /* A-RestaurantPageController.swift */,
+				643B5A7E1D29981400535FEE /* B-RestaurantPageController.swift */,
+				643B5A801D29997000535FEE /* C-RestaurantPageController.swift */,
+				643B5A821D299AB700535FEE /* D-RestaurantPageController.swift */,
+				643B5A781D29626C00535FEE /* CustomCell.swift */,
+				643B5A7A1D298C3500535FEE /* CustomRestaurantCell.swift */,
 				643B59BC1D2578B600535FEE /* ScrollViewController.swift */,
 				643812D61D1CE43B007D32A9 /* LikedViewController.swift */,
 				643812D81D1CE475007D32A9 /* PersonalViewController.swift */,
@@ -272,10 +293,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				643812D71D1CE43B007D32A9 /* LikedViewController.swift in Sources */,
+				643B5A751D295F0200535FEE /* SearchResult.swift in Sources */,
+				643B5A7F1D29981400535FEE /* B-RestaurantPageController.swift in Sources */,
+				643B5A7B1D298C3500535FEE /* CustomRestaurantCell.swift in Sources */,
 				643B59BD1D2578B600535FEE /* ScrollViewController.swift in Sources */,
 				643812D91D1CE475007D32A9 /* PersonalViewController.swift in Sources */,
+				643B5A7D1D298D5600535FEE /* A-RestaurantPageController.swift in Sources */,
 				643812AB1D1CE177007D32A9 /* SearchViewController.swift in Sources */,
 				643812A71D1CE177007D32A9 /* AppDelegate.swift in Sources */,
+				643B5A791D29626C00535FEE /* CustomCell.swift in Sources */,
+				643B5A831D299AB700535FEE /* D-RestaurantPageController.swift in Sources */,
+				643B5A811D29997000535FEE /* C-RestaurantPageController.swift in Sources */,
 				643812A91D1CE177007D32A9 /* SpeakViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
