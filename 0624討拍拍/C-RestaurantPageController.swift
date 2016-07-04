@@ -16,7 +16,7 @@ class CRestaurantPageController: UIViewController, UITableViewDelegate, UITableV
     var identities = [String]()
     
     var titles = ["瀏覽菜單","近期優惠","店家電話","營業時間","距離捷運站","店家評價","平均價位","喜愛菜色","菜單更新時間","備註"]
-    var contents = [" ","無","02-2736-9046","8:00-21:00","科技大樓五分鐘","3.5","110-160元"," ","2015.3.17","免服務費，自行取水"]
+    var contents = [" ","暫無","02-2736-9046","8:00-21:00","科技大樓五分鐘","3.6","110-160元"," ","2015.3.17","免服務費，自行取水"]
     
     
     
@@ -24,8 +24,8 @@ class CRestaurantPageController: UIViewController, UITableViewDelegate, UITableV
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        identities = ["C-menu","C-sell"]
-        //尋找Storyboard的identities，Trigger SeguetableView	UITableView	0x000000012c8e1000
+        identities = ["C-menu"]
+        //尋找Storyboard的identities，Trigger Segue
         
         
     }

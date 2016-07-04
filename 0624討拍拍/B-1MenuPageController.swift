@@ -16,8 +16,8 @@ class BMenuRestaurantPageController: UIViewController, UITableViewDelegate, UITa
     
     var identities = [String]()
     
-    var titles = ["招牌麵食","麵食","麵飯類","點心類"]
-    var contents = ["（可選麵或油豆腐細粉） 10項","（可選麵或油豆腐細粉） 8項","7項","17項"]
+    var titles = ["招牌麵食","麵食","麵飯類","點心類","湯類"]
+    var contents = ["（可選麵或油豆腐細粉） 10項","（可選麵或油豆腐細粉） 8項","7項","17項","6項"]
     
     
     
@@ -25,8 +25,8 @@ class BMenuRestaurantPageController: UIViewController, UITableViewDelegate, UITa
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        identities = ["B招牌麵食","B麵食","B麵飯類","B點心類"]
-        //尋找Storyboard的identities，Trigger SeguetableView	UITableView	0x000000012c8e1000
+        identities = ["B招牌麵食","B麵食","B麵飯類","B點心類","B湯類"]
+        //尋找Storyboard的identities，Trigger Segue
         
         
     }

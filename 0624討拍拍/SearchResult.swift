@@ -16,8 +16,8 @@ class SearchResultController: UIViewController, UITableViewDelegate, UITableView
     
     var identities = [String]()
     
-    var names = ["山西刀削麵","老董牛肉細粉麵店","劉記川味牛肉麵","熊吧吐司（台北復興店）"]
-    var services = ["五顆星","四顆星","四顆星","三顆星"]
+    var names = ["山西刀削麵","老董牛肉細粉麵店","劉記川味牛肉麵"]
+    var services = ["3.9顆星","3.5顆星","3.6顆星"]
     
     
     

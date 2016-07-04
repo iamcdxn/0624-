@@ -25,7 +25,7 @@ class DMenuRestaurantPageController: UIViewController, UITableViewDelegate, UITa
         // Do any additional setup after loading the view, typically from a nib.
         
         identities = ["D手感吐司","D法式烤布蕾吐司","D熊巴鬆餅","D熊巴早午餐","D熊點心","D飲品","D黑熊咖啡","D冰釀茶飲","D花草茶飲"]
-        //尋找Storyboard的identities，Trigger SeguetableView	UITableView	0x000000012c8e1000
+        //尋找Storyboard的identities，Trigger Segue
         
         
     }

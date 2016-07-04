@@ -26,8 +26,8 @@ class CMenuRestaurantPageController: UIViewController, UITableViewDelegate, UITa
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        identities = ["B招牌麵食","B麵食","B麵飯類","B點心類"]
-        //尋找Storyboard的identities，Trigger SeguetableView	UITableView	0x000000012c8e1000
+        identities = ["C麵食","C乾麵","C湯類"]
+        //尋找Storyboard的identities，Trigger Segue
         
         
     }
