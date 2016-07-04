@@ -1,23 +1,22 @@
 //
-//  SearchResult.swift
+//  E-RestaurantPageController.swift
 //  0624討拍拍
 //
-//  Created by CdxN on 2016/7/3.
+//  Created by CdxN on 2016/7/5.
 //  Copyright © 2016年 Uxpa_Everyday. All rights reserved.
 //
 
-
 import UIKit
 
-class SearchResultController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+class ERestaurantPageController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var tableView: UITableView!
     
+    
     var identities = [String]()
     
-    var names = ["山西刀削麵","老董牛肉細粉麵店","劉記川味牛肉麵"]
-    var services = ["3.9顆星","3.7顆星","3.6顆星"]
+    var titles = ["瀏覽菜單","近期優惠","營業時間","店家評價","平均價位","店家電話","菜單更新時間","備註"]
+    var contents = [" ","暫無","中午12點 至 下午11點","4.2顆星","72元","02-2904-5456","2014.11.23","無"]
     
     
     
@@ -25,31 +24,32 @@ class SearchResultController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        identities = ["山西","老董","劉記","熊吧"]
+        identities = ["E-menu"]
         //尋找Storyboard的identities，Trigger Segue
+        
         
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-        
-        
     }
     
+    
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return names.count
+        return titles.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! CustomCell
+        let cell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! CustomRestaurantCell
         
-        cell.Name.text = names[indexPath.row]
-        cell.Service.text = services[indexPath.row]
+        cell.Title.text = titles[indexPath.row]
+        cell.Content.text = contents[indexPath.row]
         
         return cell
     }
-
+    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         let vcName = identities[indexPath.row]
@@ -57,8 +57,9 @@ class SearchResultController: UIViewController, UITableViewDelegate, UITableView
         self.navigationController?.pushViewController(viewController!, animated: true)
         
     }
-
-
-
+    
+    
+    
+    
 }
 

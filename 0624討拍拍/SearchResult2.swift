@@ -1,23 +1,22 @@
 //
-//  SearchResult.swift
+//  SearchResult2.swift
 //  0624討拍拍
 //
-//  Created by CdxN on 2016/7/3.
+//  Created by CdxN on 2016/7/5.
 //  Copyright © 2016年 Uxpa_Everyday. All rights reserved.
 //
 
-
 import UIKit
 
-class SearchResultController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SearchResult2Controller: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     @IBOutlet var tableView: UITableView!
     
     var identities = [String]()
     
-    var names = ["山西刀削麵","老董牛肉細粉麵店","劉記川味牛肉麵"]
-    var services = ["3.9顆星","3.7顆星","3.6顆星"]
+    var names = ["綠蓋茶館（輔大店）","熊巴吐司","山西刀削麵"]
+    var services = ["4.2顆星","3.9顆星","3.6顆星"]
     
     
     
@@ -25,7 +24,7 @@ class SearchResultController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        identities = ["山西","老董","劉記","熊吧"]
+        identities = ["綠蓋輔大","熊吧","山西"]
         //尋找Storyboard的identities，Trigger Segue
         
     }
@@ -49,7 +48,7 @@ class SearchResultController: UIViewController, UITableViewDelegate, UITableView
         
         return cell
     }
-
+    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         let vcName = identities[indexPath.row]
@@ -57,8 +56,7 @@ class SearchResultController: UIViewController, UITableViewDelegate, UITableView
         self.navigationController?.pushViewController(viewController!, animated: true)
         
     }
-
-
-
+    
+    
+    
 }
-
