@@ -19,6 +19,7 @@ class AMenuRestaurantPageController: UIViewController, UITableViewDelegate, UITa
     var contents = ["9項","9項","7項","1項"]
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -26,12 +27,14 @@ class AMenuRestaurantPageController: UIViewController, UITableViewDelegate, UITa
         identities = ["A湯麵類","A乾麵類","A湯類","A其他"]
         //尋找Storyboard的identities，Trigger Segue
         
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

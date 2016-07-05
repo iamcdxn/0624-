@@ -28,15 +28,15 @@ class SpeakViewController: UIViewController,UITextFieldDelegate {
 
     
     
+    
+    
+    
     // Mark: - 鍵盤
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         //按任何地方收起鍵盤
         myTextField.resignFirstResponder()
     }
-    
-    
-    // Mark: - 呼叫buttonValue來走不同的Segue
     
     @IBAction func TextFieldEditingDidChange(sender: AnyObject) {
         print("textField:" + "\(myTextField.text)")
@@ -67,7 +67,7 @@ class SpeakViewController: UIViewController,UITextFieldDelegate {
         
         return result
         
-    
+        
     }
     
     
@@ -83,7 +83,7 @@ class SpeakViewController: UIViewController,UITextFieldDelegate {
         }else {
             
             
-            self.performSegueWithIdentifier("SpeakToSearchResult2", sender: self)
+            self.performSegueWithIdentifier("2222test", sender: self)
         }
         
         

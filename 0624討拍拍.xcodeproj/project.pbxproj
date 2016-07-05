@@ -52,13 +52,6 @@
 		643B5ABA1D29C59900535FEE /* A2MenuPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B5AB91D29C59900535FEE /* A2MenuPageController.swift */; };
 		643B5ABC1D29C5A100535FEE /* A3MenuPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B5ABB1D29C5A100535FEE /* A3MenuPageController.swift */; };
 		643B5ABE1D29C5AB00535FEE /* A4MenuPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B5ABD1D29C5AB00535FEE /* A4MenuPageController.swift */; };
-		647F6B681D2AD7470052D106 /* E-RestaurantPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647F6B671D2AD7470052D106 /* E-RestaurantPageController.swift */; };
-		647F6B6A1D2AD85F0052D106 /* E-1MenuPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647F6B691D2AD85F0052D106 /* E-1MenuPageController.swift */; };
-		647F6B6C1D2AD95E0052D106 /* E1MenuPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647F6B6B1D2AD95E0052D106 /* E1MenuPageController.swift */; };
-		647F6B6E1D2AD9680052D106 /* E2MenuPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647F6B6D1D2AD9680052D106 /* E2MenuPageController.swift */; };
-		647F6B701D2AD9700052D106 /* E3MenuPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647F6B6F1D2AD9700052D106 /* E3MenuPageController.swift */; };
-		647F6B721D2AD97A0052D106 /* E4MenuPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647F6B711D2AD97A0052D106 /* E4MenuPageController.swift */; };
-		647F6B741D2ADF7F0052D106 /* SearchResult2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647F6B731D2ADF7F0052D106 /* SearchResult2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +72,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		643812A31D1CE177007D32A9 /* 菜單討拍拍.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "菜單討拍拍.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		643812A31D1CE177007D32A9 /* 0624討拍拍.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "0624討拍拍.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		643812A61D1CE177007D32A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		643812A81D1CE177007D32A9 /* SpeakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakViewController.swift; sourceTree = "<group>"; };
 		643812AA1D1CE177007D32A9 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -87,10 +80,10 @@
 		643812AF1D1CE177007D32A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		643812B21D1CE177007D32A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		643812B41D1CE177007D32A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		643812B91D1CE177007D32A9 /* 菜單討拍拍.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "菜單討拍拍.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		643812B91D1CE177007D32A9 /* 0624討拍拍Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "0624討拍拍Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		643812BD1D1CE177007D32A9 /* _624___Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_624___Tests.swift"; sourceTree = "<group>"; };
 		643812BF1D1CE177007D32A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		643812C41D1CE177007D32A9 /* 菜單討拍拍.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "菜單討拍拍.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		643812C41D1CE177007D32A9 /* 0624討拍拍UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "0624討拍拍UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		643812C81D1CE177007D32A9 /* _624___UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_624___UITests.swift"; sourceTree = "<group>"; };
 		643812CA1D1CE177007D32A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		643812D61D1CE43B007D32A9 /* LikedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikedViewController.swift; sourceTree = "<group>"; };
@@ -130,13 +123,6 @@
 		643B5AB91D29C59900535FEE /* A2MenuPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A2MenuPageController.swift; sourceTree = "<group>"; };
 		643B5ABB1D29C5A100535FEE /* A3MenuPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A3MenuPageController.swift; sourceTree = "<group>"; };
 		643B5ABD1D29C5AB00535FEE /* A4MenuPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A4MenuPageController.swift; sourceTree = "<group>"; };
-		647F6B671D2AD7470052D106 /* E-RestaurantPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "E-RestaurantPageController.swift"; sourceTree = "<group>"; };
-		647F6B691D2AD85F0052D106 /* E-1MenuPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "E-1MenuPageController.swift"; sourceTree = "<group>"; };
-		647F6B6B1D2AD95E0052D106 /* E1MenuPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = E1MenuPageController.swift; sourceTree = "<group>"; };
-		647F6B6D1D2AD9680052D106 /* E2MenuPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = E2MenuPageController.swift; sourceTree = "<group>"; };
-		647F6B6F1D2AD9700052D106 /* E3MenuPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = E3MenuPageController.swift; sourceTree = "<group>"; };
-		647F6B711D2AD97A0052D106 /* E4MenuPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = E4MenuPageController.swift; sourceTree = "<group>"; };
-		647F6B731D2ADF7F0052D106 /* SearchResult2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,9 +163,9 @@
 		643812A41D1CE177007D32A9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				643812A31D1CE177007D32A9 /* 菜單討拍拍.app */,
-				643812B91D1CE177007D32A9 /* 菜單討拍拍.xctest */,
-				643812C41D1CE177007D32A9 /* 菜單討拍拍.xctest */,
+				643812A31D1CE177007D32A9 /* 0624討拍拍.app */,
+				643812B91D1CE177007D32A9 /* 0624討拍拍Tests.xctest */,
+				643812C41D1CE177007D32A9 /* 0624討拍拍UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -232,21 +218,22 @@
 			isa = PBXGroup;
 			children = (
 				643B5A741D295F0200535FEE /* SearchResult.swift */,
-				647F6B731D2ADF7F0052D106 /* SearchResult2.swift */,
 				643B5A781D29626C00535FEE /* CustomResultCell.swift */,
 				643B5A7A1D298C3500535FEE /* CustomRestaurantCell.swift */,
 				643B5A881D29A03200535FEE /* CustomMenuSeriesCell.swift */,
 				643B5A921D29AAFF00535FEE /* CustomMenu2Cell.swift */,
 				643B5A7C1D298D5600535FEE /* A-RestaurantPageController.swift */,
-				647F6B751D2ADFA40052D106 /* A-Menu */,
+				643B5A861D299DF100535FEE /* A-1MenuPageController.swift */,
+				643B5AB71D29C58900535FEE /* A1MenuPageController.swift */,
+				643B5AB91D29C59900535FEE /* A2MenuPageController.swift */,
+				643B5ABB1D29C5A100535FEE /* A3MenuPageController.swift */,
+				643B5ABD1D29C5AB00535FEE /* A4MenuPageController.swift */,
 				643B5A7E1D29981400535FEE /* B-RestaurantPageController.swift */,
 				643B5AB61D29C56200535FEE /* B-Menu */,
 				643B5A801D29997000535FEE /* C-RestaurantPageController.swift */,
 				643B5AAB1D29C0C100535FEE /* C-Menues */,
 				643B5A821D299AB700535FEE /* D-RestaurantPageController.swift */,
 				643B5AA41D29BCBC00535FEE /* D-Menus */,
-				647F6B671D2AD7470052D106 /* E-RestaurantPageController.swift */,
-				647F6B761D2ADFB90052D106 /* E-Menu */,
 			);
 			name = SearchResult;
 			sourceTree = "<group>";
@@ -292,36 +279,12 @@
 			name = "B-Menu";
 			sourceTree = "<group>";
 		};
-		647F6B751D2ADFA40052D106 /* A-Menu */ = {
-			isa = PBXGroup;
-			children = (
-				643B5A861D299DF100535FEE /* A-1MenuPageController.swift */,
-				643B5AB71D29C58900535FEE /* A1MenuPageController.swift */,
-				643B5AB91D29C59900535FEE /* A2MenuPageController.swift */,
-				643B5ABB1D29C5A100535FEE /* A3MenuPageController.swift */,
-				643B5ABD1D29C5AB00535FEE /* A4MenuPageController.swift */,
-			);
-			name = "A-Menu";
-			sourceTree = "<group>";
-		};
-		647F6B761D2ADFB90052D106 /* E-Menu */ = {
-			isa = PBXGroup;
-			children = (
-				647F6B691D2AD85F0052D106 /* E-1MenuPageController.swift */,
-				647F6B6B1D2AD95E0052D106 /* E1MenuPageController.swift */,
-				647F6B6D1D2AD9680052D106 /* E2MenuPageController.swift */,
-				647F6B6F1D2AD9700052D106 /* E3MenuPageController.swift */,
-				647F6B711D2AD97A0052D106 /* E4MenuPageController.swift */,
-			);
-			name = "E-Menu";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		643812A21D1CE177007D32A9 /* 菜單討拍拍 */ = {
+		643812A21D1CE177007D32A9 /* 0624討拍拍 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 643812CD1D1CE177007D32A9 /* Build configuration list for PBXNativeTarget "菜單討拍拍" */;
+			buildConfigurationList = 643812CD1D1CE177007D32A9 /* Build configuration list for PBXNativeTarget "0624討拍拍" */;
 			buildPhases = (
 				6438129F1D1CE177007D32A9 /* Sources */,
 				643812A01D1CE177007D32A9 /* Frameworks */,
@@ -331,14 +294,14 @@
 			);
 			dependencies = (
 			);
-			name = "菜單討拍拍";
+			name = "0624討拍拍";
 			productName = "0624討拍拍";
-			productReference = 643812A31D1CE177007D32A9 /* 菜單討拍拍.app */;
+			productReference = 643812A31D1CE177007D32A9 /* 0624討拍拍.app */;
 			productType = "com.apple.product-type.application";
 		};
-		643812B81D1CE177007D32A9 /* 菜單討拍拍Tests */ = {
+		643812B81D1CE177007D32A9 /* 0624討拍拍Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 643812D01D1CE177007D32A9 /* Build configuration list for PBXNativeTarget "菜單討拍拍Tests" */;
+			buildConfigurationList = 643812D01D1CE177007D32A9 /* Build configuration list for PBXNativeTarget "0624討拍拍Tests" */;
 			buildPhases = (
 				643812B51D1CE177007D32A9 /* Sources */,
 				643812B61D1CE177007D32A9 /* Frameworks */,
@@ -349,14 +312,14 @@
 			dependencies = (
 				643812BB1D1CE177007D32A9 /* PBXTargetDependency */,
 			);
-			name = "菜單討拍拍Tests";
+			name = "0624討拍拍Tests";
 			productName = "0624討拍拍Tests";
-			productReference = 643812B91D1CE177007D32A9 /* 菜單討拍拍.xctest */;
+			productReference = 643812B91D1CE177007D32A9 /* 0624討拍拍Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		643812C31D1CE177007D32A9 /* 菜單討拍拍UITests */ = {
+		643812C31D1CE177007D32A9 /* 0624討拍拍UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 643812D31D1CE177007D32A9 /* Build configuration list for PBXNativeTarget "菜單討拍拍UITests" */;
+			buildConfigurationList = 643812D31D1CE177007D32A9 /* Build configuration list for PBXNativeTarget "0624討拍拍UITests" */;
 			buildPhases = (
 				643812C01D1CE177007D32A9 /* Sources */,
 				643812C11D1CE177007D32A9 /* Frameworks */,
@@ -367,9 +330,9 @@
 			dependencies = (
 				643812C61D1CE177007D32A9 /* PBXTargetDependency */,
 			);
-			name = "菜單討拍拍UITests";
+			name = "0624討拍拍UITests";
 			productName = "0624討拍拍UITests";
-			productReference = 643812C41D1CE177007D32A9 /* 菜單討拍拍.xctest */;
+			productReference = 643812C41D1CE177007D32A9 /* 0624討拍拍UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -398,7 +361,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6438129E1D1CE177007D32A9 /* Build configuration list for PBXProject "菜單討拍拍" */;
+			buildConfigurationList = 6438129E1D1CE177007D32A9 /* Build configuration list for PBXProject "0624討拍拍" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -411,9 +374,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				643812A21D1CE177007D32A9 /* 菜單討拍拍 */,
-				643812B81D1CE177007D32A9 /* 菜單討拍拍Tests */,
-				643812C31D1CE177007D32A9 /* 菜單討拍拍UITests */,
+				643812A21D1CE177007D32A9 /* 0624討拍拍 */,
+				643812B81D1CE177007D32A9 /* 0624討拍拍Tests */,
+				643812C31D1CE177007D32A9 /* 0624討拍拍UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -456,30 +419,23 @@
 				643B5A991D29AF2100535FEE /* D4MenuPageController.swift in Sources */,
 				643B5A951D29AE4200535FEE /* D2MenuPageController.swift in Sources */,
 				643B5A7F1D29981400535FEE /* B-RestaurantPageController.swift in Sources */,
-				647F6B701D2AD9700052D106 /* E3MenuPageController.swift in Sources */,
 				643B5AA11D29B10800535FEE /* D8MenuPageController.swift in Sources */,
 				643B5A891D29A03200535FEE /* CustomMenuSeriesCell.swift in Sources */,
 				643B5AAF1D29C11900535FEE /* B2MenuPageController.swift in Sources */,
 				643B5A7B1D298C3500535FEE /* CustomRestaurantCell.swift in Sources */,
 				643B5ABA1D29C59900535FEE /* A2MenuPageController.swift in Sources */,
-				647F6B681D2AD7470052D106 /* E-RestaurantPageController.swift in Sources */,
 				643B59BD1D2578B600535FEE /* ScrollViewController.swift in Sources */,
-				647F6B6C1D2AD95E0052D106 /* E1MenuPageController.swift in Sources */,
 				643B5AA81D29BD1600535FEE /* C2MenuPageController.swift in Sources */,
 				643812D91D1CE475007D32A9 /* PersonalViewController.swift in Sources */,
 				643B5A7D1D298D5600535FEE /* A-RestaurantPageController.swift in Sources */,
 				643B5AB51D29C24E00535FEE /* B5MenuPageController.swift in Sources */,
-				647F6B6E1D2AD9680052D106 /* E2MenuPageController.swift in Sources */,
 				643B5ABE1D29C5AB00535FEE /* A4MenuPageController.swift in Sources */,
 				643B5AB31D29C24500535FEE /* B4MenuPageController.swift in Sources */,
 				643B5ABC1D29C5A100535FEE /* A3MenuPageController.swift in Sources */,
 				643B5A871D299DF100535FEE /* A-1MenuPageController.swift in Sources */,
-				647F6B741D2ADF7F0052D106 /* SearchResult2.swift in Sources */,
 				643812AB1D1CE177007D32A9 /* SearchViewController.swift in Sources */,
 				643B5A9B1D29AF7A00535FEE /* D5MenuPageController.swift in Sources */,
-				647F6B6A1D2AD85F0052D106 /* E-1MenuPageController.swift in Sources */,
 				643812A71D1CE177007D32A9 /* AppDelegate.swift in Sources */,
-				647F6B721D2AD97A0052D106 /* E4MenuPageController.swift in Sources */,
 				643B5A791D29626C00535FEE /* CustomResultCell.swift in Sources */,
 				643B5A8D1D29A59400535FEE /* C-1MenuPageController.swift in Sources */,
 				643B5A971D29AEB800535FEE /* D3MenuPageController.swift in Sources */,
@@ -521,12 +477,12 @@
 /* Begin PBXTargetDependency section */
 		643812BB1D1CE177007D32A9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 643812A21D1CE177007D32A9 /* 菜單討拍拍 */;
+			target = 643812A21D1CE177007D32A9 /* 0624討拍拍 */;
 			targetProxy = 643812BA1D1CE177007D32A9 /* PBXContainerItemProxy */;
 		};
 		643812C61D1CE177007D32A9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 643812A21D1CE177007D32A9 /* 菜單討拍拍 */;
+			target = 643812A21D1CE177007D32A9 /* 0624討拍拍 */;
 			targetProxy = 643812C51D1CE177007D32A9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -642,7 +598,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Uxpa-Everyday.-624---";
-				PRODUCT_NAME = "菜單討拍拍";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
@@ -654,7 +610,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Uxpa-Everyday.-624---";
-				PRODUCT_NAME = "菜單討拍拍";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -665,8 +621,8 @@
 				INFOPLIST_FILE = "0624討拍拍Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Uxpa-Everyday.-624---Tests";
-				PRODUCT_NAME = "菜單討拍拍";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/菜單討拍拍.app/菜單討拍拍";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/0624討拍拍.app/0624討拍拍";
 			};
 			name = Debug;
 		};
@@ -677,8 +633,8 @@
 				INFOPLIST_FILE = "0624討拍拍Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Uxpa-Everyday.-624---Tests";
-				PRODUCT_NAME = "菜單討拍拍";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/菜單討拍拍.app/菜單討拍拍";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/0624討拍拍.app/0624討拍拍";
 			};
 			name = Release;
 		};
@@ -688,7 +644,7 @@
 				INFOPLIST_FILE = "0624討拍拍UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Uxpa-Everyday.-624---UITests";
-				PRODUCT_NAME = "菜單討拍拍";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = "0624討拍拍";
 			};
 			name = Debug;
@@ -699,7 +655,7 @@
 				INFOPLIST_FILE = "0624討拍拍UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Uxpa-Everyday.-624---UITests";
-				PRODUCT_NAME = "菜單討拍拍";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = "0624討拍拍";
 			};
 			name = Release;
@@ -707,7 +663,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6438129E1D1CE177007D32A9 /* Build configuration list for PBXProject "菜單討拍拍" */ = {
+		6438129E1D1CE177007D32A9 /* Build configuration list for PBXProject "0624討拍拍" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				643812CB1D1CE177007D32A9 /* Debug */,
@@ -716,7 +672,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		643812CD1D1CE177007D32A9 /* Build configuration list for PBXNativeTarget "菜單討拍拍" */ = {
+		643812CD1D1CE177007D32A9 /* Build configuration list for PBXNativeTarget "0624討拍拍" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				643812CE1D1CE177007D32A9 /* Debug */,
@@ -725,7 +681,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		643812D01D1CE177007D32A9 /* Build configuration list for PBXNativeTarget "菜單討拍拍Tests" */ = {
+		643812D01D1CE177007D32A9 /* Build configuration list for PBXNativeTarget "0624討拍拍Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				643812D11D1CE177007D32A9 /* Debug */,
@@ -734,7 +690,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		643812D31D1CE177007D32A9 /* Build configuration list for PBXNativeTarget "菜單討拍拍UITests" */ = {
+		643812D31D1CE177007D32A9 /* Build configuration list for PBXNativeTarget "0624討拍拍UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				643812D41D1CE177007D32A9 /* Debug */,
