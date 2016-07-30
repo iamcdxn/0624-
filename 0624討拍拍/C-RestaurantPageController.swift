@@ -15,16 +15,15 @@ class CRestaurantPageController: UIViewController, UITableViewDelegate, UITableV
     
     var identities = [String]()
     
-    var titles = ["瀏覽菜單","近期優惠","店家電話","營業時間","距離捷運站","店家評價","平均價位","喜愛菜色","菜單更新時間","備註"]
-    var contents = [" ","暫無","02-2736-9046","8:00-21:00","科技大樓五分鐘","3.6","110-160元"," ","2015.3.17","免服務費，自行取水"]
-    
+    var titles = ["近期优惠","营业时间","店家评价","平均价位","店家电话","菜单更新时间","备注","給菜單提供者一個鼓勵吧！"]
+    var contents = ["暂无","上午8点 至 下午9点","3.5颗星","110 至 160元","02-2736-9046","2016.5","免服務費，自行取水",""]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        identities = ["C-menu"]
+//        
+//        identities = ["C-menu"]
         //尋找Storyboard的identities，Trigger Segue
         
         
@@ -50,13 +49,17 @@ class CRestaurantPageController: UIViewController, UITableViewDelegate, UITableV
         return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        let vcName = identities[indexPath.row]
-        let viewController = storyboard?.instantiateViewControllerWithIdentifier(vcName)
-        self.navigationController?.pushViewController(viewController!, animated: true)
-        
-    }
+    
+//    
+    //尋找Storyboard的identities，Trigger Segue
+
+//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        
+//        let vcName = identities[indexPath.row]
+//        let viewController = storyboard?.instantiateViewControllerWithIdentifier(vcName)
+//        self.navigationController?.pushViewController(viewController!, animated: true)
+//        
+//    }
     
     
     

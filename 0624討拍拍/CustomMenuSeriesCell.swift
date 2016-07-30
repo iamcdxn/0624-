@@ -17,7 +17,6 @@ class CustomMenuSeriesCell: UITableViewCell {
     
     @IBOutlet var Num: UILabel!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         //初始Code

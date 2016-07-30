@@ -12,8 +12,8 @@ class D8MenuRestaurantPageController: UIViewController, UITableViewDelegate, UIT
     
     @IBOutlet var tableView: UITableView!
     
-    var titles = ["黑醋栗冰茶","韓國柚子茶","蔓越梅冰釀","蘋果冰釀","蘋果柚子冰釀","水蜜桃冰釀","荔枝冰釀","葡萄冰釀"]
-    var prices = ["60元","60元","60元","60元","65元","60元","60元","60元"]
+    var titles = ["黑醋栗冰茶","韩国柚子茶","蔓越梅冰酿","苹果冰酿","苹果柚子冰酿","水蜜桃冰酿","荔枝冰酿","葡萄冰酿"]
+    var prices = ["60 元","60 元","60 元","60 元","65 元","60 元","60 元","60 元"]
     
     
     
@@ -42,7 +42,16 @@ class D8MenuRestaurantPageController: UIViewController, UITableViewDelegate, UIT
         return cell
     }
     
+    // - MARK: 按下選項時會跳出 UIAlert Message -----
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let alert = UIAlertController(title: "提示", message: "已加入收藏菜色", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+        
+    }
+
     
     
 }

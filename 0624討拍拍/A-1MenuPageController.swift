@@ -15,8 +15,8 @@ class AMenuRestaurantPageController: UIViewController, UITableViewDelegate, UITa
     
     var identities = [String]()
     
-    var titles = ["湯麵類","乾麵類","湯類","其他"]
-    var contents = ["9項","9項","7項","1項"]
+    var titles = ["汤面类","干面类","汤类","其他"]
+    var contents = ["9 项","9 项","7 项","1 项"]
     
     
     

@@ -12,8 +12,8 @@ class A3MenuRestaurantPageController: UIViewController, UITableViewDelegate, UIT
     
     @IBOutlet var tableView: UITableView!
     
-    var titles = ["番茄牛肉湯","原汁牛肉湯","榨菜肉絲湯","番茄湯","酸辣湯（素食）","番茄牛肉清湯","牛肉清湯"]
-    var prices = ["100元","30元","30元","30元","30元","30元","30元"]
+    var titles = ["番茄牛肉汤","原汁牛肉汤","榨菜肉丝汤","番茄汤","酸辣汤（素食）","番茄牛肉清汤","牛肉清汤"]
+    var prices = ["100 元","30 元","30 元","30 元","30 元","30 元","30 元"]
     
     
     

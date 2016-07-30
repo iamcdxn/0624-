@@ -17,8 +17,8 @@ class CMenuRestaurantPageController: UIViewController, UITableViewDelegate, UITa
     
     var identities = [String]()
     
-    var titles = ["麵食","乾麵","湯類"]
-    var contents = ["（可選麵、米粉或冬粉，加大加10元） 11項","（加大加10元） 4項","5項"]
+    var titles = ["面食","干面","汤类"]
+    var contents = ["（可选面、米粉或冬粉，加大加10元）11 项","（加大加10元） 4 项","5 项"]
     
     
     

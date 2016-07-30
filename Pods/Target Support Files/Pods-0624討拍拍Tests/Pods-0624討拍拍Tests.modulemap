@@ -1,0 +1,6 @@
+framework module Pods_0624___Tests {
+  umbrella header "Pods-0624討拍拍Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03B8DED74EAFBAADC2A7DEBD40F29728 /* Pods-0624討拍拍UITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4138F69E36FB11C6A554CB33F400977B /* Pods-0624討拍拍UITests-dummy.m */; };
+		153C3079E0CF0E00D22BFEC55DAF667A /* Pods-0624討拍拍Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36BAABDDAEEE5B8B6B89C196B710205C /* Pods-0624討拍拍Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28E535DA3E9C3491FFCC422DBF6E6AC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		301BF3164A2D1426870710A5099A113F /* Pods-0624討拍拍Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AA846CFC67B839A5061E3B4BC86FD6 /* Pods-0624討拍拍Tests-dummy.m */; };
+		3DFAAA2172E67AEED4FCF8C61DF9481E /* Pods-0624討拍拍-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12416791FDF1810E46638C7064F44E31 /* Pods-0624討拍拍-dummy.m */; };
+		4A066B1E04F9049039B5C7DA6821A3FC /* Pods-0624討拍拍-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 843E33C3DB841046856BFC4A4B6206A2 /* Pods-0624討拍拍-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B44917B0BCCA60B82BFF246B1A1561D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		D7B0EDFC0D6E127282E25A7F528F0843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		F4DF533C6B10F280A00C60129D064E66 /* Pods-0624討拍拍UITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D5D5A2B0D555833D1EA96558103D1A8 /* Pods-0624討拍拍UITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		120AD078937903E0150C26F0459D15FA /* Pods-0624討拍拍-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-0624討拍拍-frameworks.sh"; sourceTree = "<group>"; };
+		12416791FDF1810E46638C7064F44E31 /* Pods-0624討拍拍-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-0624討拍拍-dummy.m"; sourceTree = "<group>"; };
+		173BE3D5E7FD6884B2A5AF3236974771 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		1BB0E93AF2CED5D63EF927B3DB9E348B /* Pods-0624討拍拍Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-0624討拍拍Tests.release.xcconfig"; sourceTree = "<group>"; };
+		22128B09A28E9A0138FC07527B422F7D /* Pods-0624討拍拍-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-0624討拍拍-resources.sh"; sourceTree = "<group>"; };
+		307941FBAD79FEE6067A0120924EB30C /* Pods-0624討拍拍UITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-0624討拍拍UITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3150F1D57FE321B96EC62511D902E212 /* Pods-0624討拍拍Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-0624討拍拍Tests-frameworks.sh"; sourceTree = "<group>"; };
+		36BAABDDAEEE5B8B6B89C196B710205C /* Pods-0624討拍拍Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-0624討拍拍Tests-umbrella.h"; sourceTree = "<group>"; };
+		37EF1D1FE547D3AA8D761EE29978C92F /* Pods_0624___.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_0624___.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ABEB3D877D33FE80114C3EF3172291A /* Pods-0624討拍拍.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-0624討拍拍.modulemap"; sourceTree = "<group>"; };
+		40198FF13C2A38B847C40962A3E07A28 /* Pods-0624討拍拍-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-0624討拍拍-acknowledgements.plist"; sourceTree = "<group>"; };
+		4138F69E36FB11C6A554CB33F400977B /* Pods-0624討拍拍UITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-0624討拍拍UITests-dummy.m"; sourceTree = "<group>"; };
+		4D5D5A2B0D555833D1EA96558103D1A8 /* Pods-0624討拍拍UITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-0624討拍拍UITests-umbrella.h"; sourceTree = "<group>"; };
+		505D423F5E90A351C5AF6465426A5E0F /* Pods-0624討拍拍Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-0624討拍拍Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		50AA846CFC67B839A5061E3B4BC86FD6 /* Pods-0624討拍拍Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-0624討拍拍Tests-dummy.m"; sourceTree = "<group>"; };
+		5208E4EB32CA5AA59CFF6E023E2B024A /* Pods-0624討拍拍.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-0624討拍拍.debug.xcconfig"; sourceTree = "<group>"; };
+		5DA17DECD7EFFD6E7D1019D37B4CDCE7 /* Pods-0624討拍拍Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-0624討拍拍Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7486AFD5546EE46DA4A7037CABE13482 /* Pods_0624___Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_0624___Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		751B4293D30ABA110D57F38B805DBFBB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BDBAD55E1A2761466841D5CE7EB5F11 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		7CD199F8B6D25F7B50DD7470ABA5A831 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		80128B326BE6AC95A9A1DC0F3E83C1C7 /* Pods-0624討拍拍.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-0624討拍拍.release.xcconfig"; sourceTree = "<group>"; };
+		843E33C3DB841046856BFC4A4B6206A2 /* Pods-0624討拍拍-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-0624討拍拍-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98430EC92EA6203AA331F1C332FB4967 /* Pods-0624討拍拍Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-0624討拍拍Tests.modulemap"; sourceTree = "<group>"; };
+		9EC2A979829F26A198D3459B48C5996B /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		A47B3E3F2222D295B5ACBB171B39CBFC /* Pods-0624討拍拍UITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-0624討拍拍UITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A5741189EF84E5DE25E60A0E56BCF13F /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		B20CBCA1505CBB0552A608007AD23A99 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		C3299DCDF66B3050A8A0BF5B008C3E0F /* Pods-0624討拍拍UITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-0624討拍拍UITests.modulemap"; sourceTree = "<group>"; };
+		C3AA50E3FDE7B324B387837899C4C477 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
+		C3CC607029F0E81E05A648F67BF4E1E2 /* Pods-0624討拍拍UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-0624討拍拍UITests.release.xcconfig"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D216EEE4EDF9059CD271386196547DD6 /* Pods-0624討拍拍Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-0624討拍拍Tests-resources.sh"; sourceTree = "<group>"; };
+		D762E8B9D03BBD5D4809F1DD1AC51F3B /* Pods_0624___UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_0624___UITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D827FABFB248142840BCA00033329D89 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
+		DC2C96CD8D4F87E2B61FB5570B03B47B /* Pods-0624討拍拍-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-0624討拍拍-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EE4CE21FBF2218F3AB6EF36019DF45B6 /* Pods-0624討拍拍UITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-0624討拍拍UITests-frameworks.sh"; sourceTree = "<group>"; };
+		EF8CC4D981973EFFFD3A533E6458AD37 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F406FC8750AE6E382DA8075BB12BC070 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4B0CA13FAFE68041BEAC25D64D1C6FC /* Pods-0624討拍拍Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-0624討拍拍Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FC5AB9E2FF649ACD8971E331EC367406 /* Pods-0624討拍拍UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-0624討拍拍UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FDC07D62A12CD7B9308EB08C741FC465 /* Pods-0624討拍拍UITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-0624討拍拍UITests-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20E3A2F1F3C4A5E6777217FF79749532 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7B0EDFC0D6E127282E25A7F528F0843 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220B90537F8D79AC9C887E2080B9113C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28E535DA3E9C3491FFCC422DBF6E6AC9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F5F442EE44C50EF53EF990CCED1415B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B44917B0BCCA60B82BFF246B1A1561D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03011DBF17B39DC5F5D3A5BEE0284493 /* Pods-0624討拍拍 */ = {
+			isa = PBXGroup;
+			children = (
+				EF8CC4D981973EFFFD3A533E6458AD37 /* Info.plist */,
+				3ABEB3D877D33FE80114C3EF3172291A /* Pods-0624討拍拍.modulemap */,
+				DC2C96CD8D4F87E2B61FB5570B03B47B /* Pods-0624討拍拍-acknowledgements.markdown */,
+				40198FF13C2A38B847C40962A3E07A28 /* Pods-0624討拍拍-acknowledgements.plist */,
+				12416791FDF1810E46638C7064F44E31 /* Pods-0624討拍拍-dummy.m */,
+				120AD078937903E0150C26F0459D15FA /* Pods-0624討拍拍-frameworks.sh */,
+				22128B09A28E9A0138FC07527B422F7D /* Pods-0624討拍拍-resources.sh */,
+				843E33C3DB841046856BFC4A4B6206A2 /* Pods-0624討拍拍-umbrella.h */,
+				5208E4EB32CA5AA59CFF6E023E2B024A /* Pods-0624討拍拍.debug.xcconfig */,
+				80128B326BE6AC95A9A1DC0F3E83C1C7 /* Pods-0624討拍拍.release.xcconfig */,
+			);
+			name = "Pods-0624討拍拍";
+			path = "Target Support Files/Pods-0624討拍拍";
+			sourceTree = "<group>";
+		};
+		17F44D02479172F82D13993E1D3145FA /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				EE171FCA9129C563D5DD74910A51F38F /* Frameworks */,
+			);
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		3715C1FD65FC43924AEE615C9BA949B5 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				81C9A50E942732A55AAB07567D987531 /* Analytics */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		441E618FD1926A1337CE9A336E5AF56B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				03011DBF17B39DC5F5D3A5BEE0284493 /* Pods-0624討拍拍 */,
+				EAC0114DE81C612609CD00513D4518A8 /* Pods-0624討拍拍Tests */,
+				687CB3930EFF4514039FAF568282D90C /* Pods-0624討拍拍UITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4540BEFA95C9D4C370728E8979DE3402 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37EF1D1FE547D3AA8D761EE29978C92F /* Pods_0624___.framework */,
+				7486AFD5546EE46DA4A7037CABE13482 /* Pods_0624___Tests.framework */,
+				D762E8B9D03BBD5D4809F1DD1AC51F3B /* Pods_0624___UITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A97192267D00D27B6965F755BFF626A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BDBAD55E1A2761466841D5CE7EB5F11 /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53B766708A83BA1A9712BB209BA238E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3715C1FD65FC43924AEE615C9BA949B5 /* Firebase */,
+				17F44D02479172F82D13993E1D3145FA /* FirebaseAnalytics */,
+				A0312E391FAD27C57573DF24E02718A2 /* FirebaseDatabase */,
+				77A51F94615C587721C6F577BCB4E6E3 /* FirebaseInstanceID */,
+				80EEC67F754484ADF268A0844CB4211B /* GoogleInterchangeUtilities */,
+				B5741D6B1D1895BF37B98C326875D222 /* GoogleSymbolUtilities */,
+				7B45E2FBFA12606E601C184142189D7F /* GoogleUtilities */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5B744589EB306B5B04C2178D4790756A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EC2A979829F26A198D3459B48C5996B /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		687CB3930EFF4514039FAF568282D90C /* Pods-0624討拍拍UITests */ = {
+			isa = PBXGroup;
+			children = (
+				F406FC8750AE6E382DA8075BB12BC070 /* Info.plist */,
+				C3299DCDF66B3050A8A0BF5B008C3E0F /* Pods-0624討拍拍UITests.modulemap */,
+				307941FBAD79FEE6067A0120924EB30C /* Pods-0624討拍拍UITests-acknowledgements.markdown */,
+				A47B3E3F2222D295B5ACBB171B39CBFC /* Pods-0624討拍拍UITests-acknowledgements.plist */,
+				4138F69E36FB11C6A554CB33F400977B /* Pods-0624討拍拍UITests-dummy.m */,
+				EE4CE21FBF2218F3AB6EF36019DF45B6 /* Pods-0624討拍拍UITests-frameworks.sh */,
+				FDC07D62A12CD7B9308EB08C741FC465 /* Pods-0624討拍拍UITests-resources.sh */,
+				4D5D5A2B0D555833D1EA96558103D1A8 /* Pods-0624討拍拍UITests-umbrella.h */,
+				FC5AB9E2FF649ACD8971E331EC367406 /* Pods-0624討拍拍UITests.debug.xcconfig */,
+				C3CC607029F0E81E05A648F67BF4E1E2 /* Pods-0624討拍拍UITests.release.xcconfig */,
+			);
+			name = "Pods-0624討拍拍UITests";
+			path = "Target Support Files/Pods-0624討拍拍UITests";
+			sourceTree = "<group>";
+		};
+		77A51F94615C587721C6F577BCB4E6E3 /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				D827FABFB248142840BCA00033329D89 /* FIRInstanceID.h */,
+				4A97192267D00D27B6965F755BFF626A /* Frameworks */,
+			);
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		7B45E2FBFA12606E601C184142189D7F /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				90078067A3170139DC228D6ABFD06366 /* Frameworks */,
+			);
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				53B766708A83BA1A9712BB209BA238E3 /* Pods */,
+				4540BEFA95C9D4C370728E8979DE3402 /* Products */,
+				441E618FD1926A1337CE9A336E5AF56B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		80EEC67F754484ADF268A0844CB4211B /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				5B744589EB306B5B04C2178D4790756A /* Frameworks */,
+			);
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		81C9A50E942732A55AAB07567D987531 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				C3AA50E3FDE7B324B387837899C4C477 /* Firebase.h */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+		90078067A3170139DC228D6ABFD06366 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5741189EF84E5DE25E60A0E56BCF13F /* GoogleUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		949B9CD97B7207991D0232819128CB8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				173BE3D5E7FD6884B2A5AF3236974771 /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0312E391FAD27C57573DF24E02718A2 /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				CA0FCDCAC546F682AE5C60F5E9C42055 /* Frameworks */,
+			);
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		B5741D6B1D1895BF37B98C326875D222 /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				949B9CD97B7207991D0232819128CB8F /* Frameworks */,
+			);
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA0FCDCAC546F682AE5C60F5E9C42055 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B20CBCA1505CBB0552A608007AD23A99 /* FirebaseDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAC0114DE81C612609CD00513D4518A8 /* Pods-0624討拍拍Tests */ = {
+			isa = PBXGroup;
+			children = (
+				751B4293D30ABA110D57F38B805DBFBB /* Info.plist */,
+				98430EC92EA6203AA331F1C332FB4967 /* Pods-0624討拍拍Tests.modulemap */,
+				F4B0CA13FAFE68041BEAC25D64D1C6FC /* Pods-0624討拍拍Tests-acknowledgements.markdown */,
+				5DA17DECD7EFFD6E7D1019D37B4CDCE7 /* Pods-0624討拍拍Tests-acknowledgements.plist */,
+				50AA846CFC67B839A5061E3B4BC86FD6 /* Pods-0624討拍拍Tests-dummy.m */,
+				3150F1D57FE321B96EC62511D902E212 /* Pods-0624討拍拍Tests-frameworks.sh */,
+				D216EEE4EDF9059CD271386196547DD6 /* Pods-0624討拍拍Tests-resources.sh */,
+				36BAABDDAEEE5B8B6B89C196B710205C /* Pods-0624討拍拍Tests-umbrella.h */,
+				505D423F5E90A351C5AF6465426A5E0F /* Pods-0624討拍拍Tests.debug.xcconfig */,
+				1BB0E93AF2CED5D63EF927B3DB9E348B /* Pods-0624討拍拍Tests.release.xcconfig */,
+			);
+			name = "Pods-0624討拍拍Tests";
+			path = "Target Support Files/Pods-0624討拍拍Tests";
+			sourceTree = "<group>";
+		};
+		EE171FCA9129C563D5DD74910A51F38F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CD199F8B6D25F7B50DD7470ABA5A831 /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1AD42BC1493776208571D5B5ABF283EF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4DF533C6B10F280A00C60129D064E66 /* Pods-0624討拍拍UITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A44BC6773208F1D736FD2087EE9E62D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153C3079E0CF0E00D22BFEC55DAF667A /* Pods-0624討拍拍Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB33F9EEDFDF7292962685452DF1D20A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A066B1E04F9049039B5C7DA6821A3FC /* Pods-0624討拍拍-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2399592E8C598DE3749091A00F81BAC9 /* Pods-0624討拍拍Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88EC9A0F04F7B040B5A3465DB7691D05 /* Build configuration list for PBXNativeTarget "Pods-0624討拍拍Tests" */;
+			buildPhases = (
+				F21B8964E75E540C8C2DD4BB0CD354B8 /* Sources */,
+				20E3A2F1F3C4A5E6777217FF79749532 /* Frameworks */,
+				A44BC6773208F1D736FD2087EE9E62D9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-0624討拍拍Tests";
+			productName = "Pods-0624討拍拍Tests";
+			productReference = 7486AFD5546EE46DA4A7037CABE13482 /* Pods_0624___Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		486074EEB2F750F6470B114C2EF250B7 /* Pods-0624討拍拍UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB35F50E883AB10B1E0052EF1AE54123 /* Build configuration list for PBXNativeTarget "Pods-0624討拍拍UITests" */;
+			buildPhases = (
+				6942C84C9FA6419BB9EB2280B2FB391F /* Sources */,
+				4F5F442EE44C50EF53EF990CCED1415B /* Frameworks */,
+				1AD42BC1493776208571D5B5ABF283EF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-0624討拍拍UITests";
+			productName = "Pods-0624討拍拍UITests";
+			productReference = D762E8B9D03BBD5D4809F1DD1AC51F3B /* Pods_0624___UITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ACC0993E4115395DC5838C048B35B408 /* Pods-0624討拍拍 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09B88370432E6A533DA61ABB780C5425 /* Build configuration list for PBXNativeTarget "Pods-0624討拍拍" */;
+			buildPhases = (
+				81C66AE1A880DB312576814D4267EAB2 /* Sources */,
+				220B90537F8D79AC9C887E2080B9113C /* Frameworks */,
+				CB33F9EEDFDF7292962685452DF1D20A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-0624討拍拍";
+			productName = "Pods-0624討拍拍";
+			productReference = 37EF1D1FE547D3AA8D761EE29978C92F /* Pods_0624___.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 4540BEFA95C9D4C370728E8979DE3402 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACC0993E4115395DC5838C048B35B408 /* Pods-0624討拍拍 */,
+				2399592E8C598DE3749091A00F81BAC9 /* Pods-0624討拍拍Tests */,
+				486074EEB2F750F6470B114C2EF250B7 /* Pods-0624討拍拍UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6942C84C9FA6419BB9EB2280B2FB391F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03B8DED74EAFBAADC2A7DEBD40F29728 /* Pods-0624討拍拍UITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81C66AE1A880DB312576814D4267EAB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DFAAA2172E67AEED4FCF8C61DF9481E /* Pods-0624討拍拍-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F21B8964E75E540C8C2DD4BB0CD354B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301BF3164A2D1426870710A5099A113F /* Pods-0624討拍拍Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		034014829C1E4434983CF3A690C12017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2804EAB8346540A60BEF50A00025A9AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3CC607029F0E81E05A648F67BF4E1E2 /* Pods-0624討拍拍UITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-0624討拍拍UITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-0624討拍拍UITests/Pods-0624討拍拍UITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "Pods_0624___UITests";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		423337FC27D92524602CF1D02CD2A8F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5208E4EB32CA5AA59CFF6E023E2B024A /* Pods-0624討拍拍.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-0624討拍拍/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-0624討拍拍/Pods-0624討拍拍.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "Pods_0624___";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4CFDDF0E2865529C728410585B63C47E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 505D423F5E90A351C5AF6465426A5E0F /* Pods-0624討拍拍Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-0624討拍拍Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-0624討拍拍Tests/Pods-0624討拍拍Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "Pods_0624___Tests";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A79CF03F08849E4C1D75458B66F9C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80128B326BE6AC95A9A1DC0F3E83C1C7 /* Pods-0624討拍拍.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-0624討拍拍/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-0624討拍拍/Pods-0624討拍拍.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "Pods_0624___";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7791E48AE0A4E35E3F1AD62109A6868B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BB0E93AF2CED5D63EF927B3DB9E348B /* Pods-0624討拍拍Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-0624討拍拍Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-0624討拍拍Tests/Pods-0624討拍拍Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "Pods_0624___Tests";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		78555F5BCB99BDC30F6BD5B5598B3E66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC5AB9E2FF649ACD8971E331EC367406 /* Pods-0624討拍拍UITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-0624討拍拍UITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-0624討拍拍UITests/Pods-0624討拍拍UITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "Pods_0624___UITests";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09B88370432E6A533DA61ABB780C5425 /* Build configuration list for PBXNativeTarget "Pods-0624討拍拍" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				423337FC27D92524602CF1D02CD2A8F8 /* Debug */,
+				6A79CF03F08849E4C1D75458B66F9C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034014829C1E4434983CF3A690C12017 /* Debug */,
+				C7E474A03CAE21F1CB6046E7344C59BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88EC9A0F04F7B040B5A3465DB7691D05 /* Build configuration list for PBXNativeTarget "Pods-0624討拍拍Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CFDDF0E2865529C728410585B63C47E /* Debug */,
+				7791E48AE0A4E35E3F1AD62109A6868B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB35F50E883AB10B1E0052EF1AE54123 /* Build configuration list for PBXNativeTarget "Pods-0624討拍拍UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78555F5BCB99BDC30F6BD5B5598B3E66 /* Debug */,
+				2804EAB8346540A60BEF50A00025A9AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

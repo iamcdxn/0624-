@@ -16,8 +16,8 @@ class BMenuRestaurantPageController: UIViewController, UITableViewDelegate, UITa
     
     var identities = [String]()
     
-    var titles = ["招牌麵食","麵食","麵飯類","點心類","湯類"]
-    var contents = ["（可選麵或油豆腐細粉） 10項","（可選麵或油豆腐細粉） 8項","7項","17項","6項"]
+    var titles = ["招牌面食","面食","面饭类","点心类","汤类"]
+    var contents = ["（可选面或油豆腐细粉）10 项","（可选面或油豆腐细粉）8 项","7 项","17 项","6 项"]
     
     
     

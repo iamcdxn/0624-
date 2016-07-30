@@ -8,16 +8,21 @@
 
 
 import UIKit
+import Foundation
+import Firebase
+
+
 
 class SearchResultController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     @IBOutlet var tableView: UITableView!
     
-    var identities = [String]()
     
-    var names = ["山西刀削麵","老董牛肉細粉麵店","劉記川味牛肉麵"]
-    var services = ["3.9顆星","3.5顆星","3.6顆星"]
+    var identities = [String]()
+    var names = ["山西刀削面","小木屋咖啡馆","老董牛肉细粉面店","熊巴吐司（台北复兴店）","刘记川味牛肉面"]
+    var services = ["3.9颗星","4.2颗星","3.5颗星","3.6颗星","3.3颗星"]
+    
     
     
     
@@ -25,7 +30,7 @@ class SearchResultController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        identities = ["山西","老董","劉記","熊吧"]
+        identities = ["山西","綠蓋輔大","老董","熊吧","劉記"]
         //尋找Storyboard的identities，Trigger Segue
         
     }
@@ -59,6 +64,8 @@ class SearchResultController: UIViewController, UITableViewDelegate, UITableView
     }
 
 
+    
+    
 
 }
 

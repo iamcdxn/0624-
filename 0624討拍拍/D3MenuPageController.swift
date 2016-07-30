@@ -12,8 +12,8 @@ class D3MenuRestaurantPageController: UIViewController, UITableViewDelegate, UIT
     
     @IBOutlet var tableView: UITableView!
     
-    var titles = ["熊巴經典鬆餅","紐奧良雞腿排鬆餅","香蕉巧克力鬆餅","冰淇淋鬆餅","鱈魚排鬆餅","墨西哥脆腸鬆餅","芒果冰淇淋鬆餅","草莓之戀鬆餅"]
-    var prices = ["110元","130元","140元","130元","140元","150元","160元","160元"]
+    var titles = ["熊巴经典松饼","纽奥良鸡腿排松饼","香蕉巧克力松饼","冰淇淋松饼","鳕鱼排松饼","墨西哥脆肠松饼","芒果冰淇淋松饼","草莓之恋松饼"]
+    var prices = ["110 元","130 元","140 元","130 元","140 元","150 元","160 元","160 元"]
     
     
     
@@ -43,6 +43,15 @@ class D3MenuRestaurantPageController: UIViewController, UITableViewDelegate, UIT
     }
     
     
+    // - MARK: 按下選項時會跳出 UIAlert Message -----
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let alert = UIAlertController(title: "提示", message: "已加入收藏菜色", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+        
+    }
+
     
 }

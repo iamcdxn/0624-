@@ -12,8 +12,8 @@ class C2MenuRestaurantPageController: UIViewController, UITableViewDelegate, UIT
     
     @IBOutlet var tableView: UITableView!
     
-    var titles = ["紅油炒手乾麵","麻辣乾麵","炸醬乾麵","麻醬乾麵"]
-    var prices = ["70元","60元","50元","50元"]
+    var titles = ["红油炒手干面","麻辣干面","炸酱干面","麻酱干面"]
+    var prices = ["70 元","60 元","50 元","50 元"]
     
     
     
@@ -42,7 +42,16 @@ class C2MenuRestaurantPageController: UIViewController, UITableViewDelegate, UIT
         return cell
     }
     
+    // - MARK: 按下選項時會跳出 UIAlert Message -----
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let alert = UIAlertController(title: "提示", message: "已加入收藏菜色", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+        
+    }
+
     
     
 }

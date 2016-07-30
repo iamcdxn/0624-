@@ -15,8 +15,8 @@ class DMenuRestaurantPageController: UIViewController, UITableViewDelegate, UITa
     
     var identities = [String]()
     
-    var titles = ["手感吐司","法式烤布蕾吐司","熊巴鬆餅","熊巴早午餐","熊點心","飲品","黑熊咖啡","冰釀茶飲","花草茶飲"]
-    var contents = ["6項","7項","8項","6項","11項","8項","9項","8項","4項"]
+    var titles = ["手感吐司","法式烤布蕾吐司","熊巴松饼","熊巴早午餐","熊点心","饮品","黑熊咖啡","冰酿茶饮","花草茶饮"]
+    var contents = ["6 项","7 项","8 项","6 项","11 项","8 项","9 项","8 项","4 项"]
     
     
     

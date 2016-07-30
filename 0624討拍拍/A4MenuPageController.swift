@@ -13,7 +13,7 @@ class A4MenuRestaurantPageController: UIViewController, UITableViewDelegate, UIT
     @IBOutlet var tableView: UITableView!
     
     var titles = ["各式小菜"]
-    var prices = ["每盤30元"]
+    var prices = ["每盤 30 元"]
     
     
     
@@ -42,7 +42,16 @@ class A4MenuRestaurantPageController: UIViewController, UITableViewDelegate, UIT
         return cell
     }
     
+    // - MARK: 按下選項時會跳出 UIAlert Message -----
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let alert = UIAlertController(title: "提示", message: "已加入收藏菜色", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+        
+    }
+
     
     
 }

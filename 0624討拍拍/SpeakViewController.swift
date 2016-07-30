@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SpeakViewController: UIViewController,UITextFieldDelegate {
 
@@ -14,11 +15,19 @@ class SpeakViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet var myTextField: UITextField!
     @IBOutlet var SearchButton: UIButton!
     
+    
+    
+
+    
     var buttonValue = Int()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+       
+        
+
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -83,7 +92,7 @@ class SpeakViewController: UIViewController,UITextFieldDelegate {
         }else {
             
             
-            self.performSegueWithIdentifier("2222test", sender: self)
+            self.performSegueWithIdentifier("SpeakToSearchResult", sender: self)
         }
         
         
