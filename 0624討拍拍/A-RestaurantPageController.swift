@@ -10,6 +10,7 @@ import UIKit
 
 class ARestaurantPageController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet var NeedHelpBtn: UIButton!
     @IBOutlet var tableView: UITableView!
     
     
@@ -60,6 +61,12 @@ class ARestaurantPageController: UIViewController, UITableViewDelegate, UITableV
 //    
 //    
 
+    @IBAction func NeedHelpBtnPressed(sender: AnyObject) {
+        
+        let alert = UIAlertController(title: "提示", message: "菜单完成时将收到通知", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
     
 }
 
