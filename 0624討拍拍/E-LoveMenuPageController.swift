@@ -10,11 +10,10 @@ import UIKit
 
 class ELoveMenuPageController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet var ClearBtn: UIButton!
     @IBOutlet var tableView: UITableView!
     
-    var titles = ["炸甜不辣","綠蓋茶","富士山冰奶茶","水餃","熱奶茶","黃金柚子茶"]
-    var prices = ["80 元","65 元","80 元","80 元","100 元","80 元"]
+    var titles = ["綠蓋茶","富士山冰奶茶","炸甜不辣","水餃（12顆）"]
+    var prices = ["65 元","80 元","80 元"," 80 元"]
     
     
     
@@ -54,15 +53,9 @@ class ELoveMenuPageController: UIViewController, UITableViewDelegate, UITableVie
         
     }
     
-//    @IBAction func ClearAction(sender: AnyObject) {
-//        
-//        self.titles = ["","","","","",""]
-//        self.prices = ["","","","","",""]
-
-
         
         
-    }
+}
     
     
 
