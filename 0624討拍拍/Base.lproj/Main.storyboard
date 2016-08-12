@@ -2968,6 +2968,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="PressButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="5Jj-Qs-Wfy"/>
+                                    <action selector="backBtnFunc:" destination="VEe-QH-H1Z" eventType="touchUpInside" id="mqo-Jg-XWE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNV-6D-nP5">
@@ -3077,6 +3078,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="backBtn" destination="jBc-QI-aqh" id="v1H-Py-7lG"/>
                         <outlet property="picker" destination="Drj-pQ-abb" id="vs6-ZL-xTe"/>
                     </connections>
                 </viewController>
@@ -3110,6 +3112,7 @@
                                 </state>
                                 <connections>
                                     <action selector="PressButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="dZM-5B-pzO"/>
+                                    <action selector="backBtnFunc:" destination="hvm-Y0-dGT" eventType="touchUpInside" id="b26-Lj-bAi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUV-wZ-YfF">
@@ -3232,6 +3235,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="backBtn" destination="k7S-Jd-BQ5" id="oZf-GU-dkJ"/>
                         <outlet property="picker" destination="i6L-dW-m1z" id="Q4b-EJ-778"/>
                     </connections>
                 </viewController>
@@ -7910,6 +7914,9 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="20" y="8" width="152" height="21"/>
+                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <constraints>
@@ -8210,18 +8217,18 @@
         <image name="yellow_stroke_btn" width="325" height="55"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fXQ-X8-eA5"/>
-        <segue reference="uAX-D9-moC"/>
-        <segue reference="wlu-2Y-XyK"/>
-        <segue reference="Z2J-gQ-Q8H"/>
-        <segue reference="QtQ-as-ypE"/>
+        <segue reference="xDw-yq-k6h"/>
+        <segue reference="Q8z-7u-yEB"/>
+        <segue reference="geG-un-QGl"/>
+        <segue reference="M3v-Fs-SC9"/>
         <segue reference="SRw-LE-JwI"/>
         <segue reference="Y6Q-4y-cGc"/>
-        <segue reference="L3h-0O-eEf"/>
+        <segue reference="fXQ-X8-eA5"/>
         <segue reference="CWn-h5-5gy"/>
+        <segue reference="L3h-0O-eEf"/>
+        <segue reference="aHU-QF-V2u"/>
         <segue reference="ZR4-rK-4Xt"/>
         <segue reference="xaE-Nj-zne"/>
-        <segue reference="DvP-BF-vGh"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

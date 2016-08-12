@@ -21,6 +21,7 @@ import UIKit
 class PickerViewControllerTime: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
     
     @IBOutlet weak var picker: UIPickerView!
+    @IBOutlet var backBtn: UIButton!
     
     //首先先把要顯示的資料分別存在兩個Array
     let numberArray = ["早餐","早午餐","午餐","下午茶","晚餐","宵夜"]
@@ -108,7 +109,11 @@ class PickerViewControllerTime: UIViewController,UIPickerViewDataSource,UIPicker
         
     }
     
-    
+    @IBAction func backBtnFunc(sender: AnyObject) {
+        
+        navigationController?.popViewControllerAnimated(true)
+        
+    }
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
