@@ -737,6 +737,9 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="13" y="9" width="206" height="56.5"/>
+                                                    </variation>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contents" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rff-jK-e6s">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -753,7 +756,8 @@
                                                             <exclude reference="leX-gz-KOr"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="widthClass=compact">
+                                                    <variation key="widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="9" y="10" width="218" height="55"/>
                                                         <mask key="constraints">
                                                             <include reference="jcE-Tl-PgZ"/>
                                                             <include reference="leX-gz-KOr"/>
@@ -7887,6 +7891,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Eu2-ID-gDf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="RetrieveDataTest" id="31r-Z9-OeZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pFP-is-uG9">
@@ -7897,6 +7902,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="58j-gR-C81" id="O5w-h4-RTS">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RestaurantName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVg-90-XtR">
@@ -7981,6 +7987,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Iis-Eq-D6h"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="C9T-jm-OOF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MNv-9o-P54">
@@ -8203,18 +8210,18 @@
         <image name="yellow_stroke_btn" width="325" height="55"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QtQ-as-ypE"/>
-        <segue reference="Z2J-gQ-Q8H"/>
+        <segue reference="fXQ-X8-eA5"/>
         <segue reference="uAX-D9-moC"/>
         <segue reference="wlu-2Y-XyK"/>
-        <segue reference="L3h-0O-eEf"/>
-        <segue reference="Y6Q-4y-cGc"/>
-        <segue reference="CWn-h5-5gy"/>
-        <segue reference="fXQ-X8-eA5"/>
+        <segue reference="Z2J-gQ-Q8H"/>
+        <segue reference="QtQ-as-ypE"/>
         <segue reference="SRw-LE-JwI"/>
+        <segue reference="Y6Q-4y-cGc"/>
+        <segue reference="L3h-0O-eEf"/>
+        <segue reference="CWn-h5-5gy"/>
         <segue reference="ZR4-rK-4Xt"/>
-        <segue reference="DvP-BF-vGh"/>
         <segue reference="xaE-Nj-zne"/>
+        <segue reference="DvP-BF-vGh"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

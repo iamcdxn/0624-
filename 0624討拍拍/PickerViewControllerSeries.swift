@@ -20,6 +20,9 @@ class PickerViewControllerSeries: UIViewController,UIPickerViewDataSource,UIPick
     var keyArray: [String] = ["异国料理","咖啡馆","烧烤类","冰品饮料","火锅类"]
     var makeIndex = 0
     var carDict : [String :[String]] = ["异国料理" : ["日式料理","美式料理","泰式料理","印度料理"], "咖啡馆": ["咖啡专卖","复合式咖啡馆","甜点咖啡馆"],"烧烤类":["碳烤小摊","烧肉店","居酒屋"],"冰品饮料": ["茶饮果汁", "茶品类", "甜汤类"], "火锅类": ["麻辣锅","涮涮锅","小火锅"]]
+    
+    var WhatKey = "什麼類別"
+    var WhatDict = "什麼子項目"
 
     
     
@@ -105,7 +108,12 @@ class PickerViewControllerSeries: UIViewController,UIPickerViewDataSource,UIPick
         if component == 0 {
             makeIndex = row
             pickerView.reloadComponent(1)
+            WhatKey = keyArray[row]
+        } else {
+            var modelarray = carDict[keyArray[makeIndex]]
+            WhatDict = modelarray![row]
         }
+        
     }
     
     @IBAction func backBtnFunc(sender: AnyObject) {
@@ -119,7 +127,7 @@ class PickerViewControllerSeries: UIViewController,UIPickerViewDataSource,UIPick
         
         let secondVC: SearchViewController = segue.destinationViewController as! SearchViewController
         
-        secondVC.receiveStringSeries = "咖啡馆 复合式咖啡馆"
+        secondVC.receiveStringSeries = "\(WhatKey) \(WhatDict)"
         
         
     }

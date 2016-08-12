@@ -25,6 +25,7 @@ class PickerViewControllerTime: UIViewController,UIPickerViewDataSource,UIPicker
     //首先先把要顯示的資料分別存在兩個Array
     let numberArray = ["早餐","早午餐","午餐","下午茶","晚餐","宵夜"]
     let fruitArray = ["咖啡专卖","复合式咖啡馆","甜点咖啡馆"]
+    var WhatNum = "什麼時段"
     
     
     
@@ -100,6 +101,7 @@ class PickerViewControllerTime: UIViewController,UIPickerViewDataSource,UIPicker
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if component == 0{
             print("number: \(numberArray[row])") //點擊第一個Component
+            WhatNum = numberArray[row]
         }else{
             print("fruit: \(fruitArray[row])")   //點擊第二個Component
         }
@@ -114,7 +116,9 @@ class PickerViewControllerTime: UIViewController,UIPickerViewDataSource,UIPicker
         
         let secondVC: SearchViewController = segue.destinationViewController as! SearchViewController
         
-        secondVC.receiveStringTime = "早餐"
+        secondVC.receiveStringTime = "\(WhatNum)"
+        
+        
         
         
     }

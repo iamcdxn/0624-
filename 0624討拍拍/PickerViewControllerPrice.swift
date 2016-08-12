@@ -17,7 +17,7 @@ class PickerViewControllerPrice: UIViewController,UIPickerViewDataSource,UIPicke
     //首先先把要顯示的資料分別存在兩個Array
     let numberArray = ["頂級價位 2000元以上","高價位 1400-1999元","中高價位 800-1399元","中價位 400-799元","中低價位 200-399元","平價 1-200元/每人"]
     let fruitArray = ["咖啡专卖","复合式咖啡馆","甜点咖啡馆"]
-
+    var whatNum = "價錢是啥"
     
     
     override func viewDidLoad() {
@@ -77,6 +77,8 @@ class PickerViewControllerPrice: UIViewController,UIPickerViewDataSource,UIPicke
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if component == 0{
             print("number: \(numberArray[row])") //點擊第一個Component
+            whatNum = numberArray[row]
+            
         }else{
             print("fruit: \(fruitArray[row])")   //點擊第二個Component
         }
@@ -91,7 +93,7 @@ class PickerViewControllerPrice: UIViewController,UIPickerViewDataSource,UIPicke
         
         let secondVC: SearchViewController = segue.destinationViewController as! SearchViewController
         
-        secondVC.receiveStringPrice = "平價 1-200元/每人"
+        secondVC.receiveStringPrice = "\(whatNum)"
         
         
     }
