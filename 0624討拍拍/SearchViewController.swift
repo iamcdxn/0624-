@@ -65,6 +65,25 @@ class SearchViewController: UIViewController{
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ResultSegue" {
+            if let secondVC = segue.destinationViewController as? SearchResult2Controller {
+                
+                secondVC.receiveStringTime = receiveStringTime;
+                secondVC.receiveStringPlace =
+                    receiveStringPlace;
+                secondVC.receiveStringPrice =
+                    receiveStringPrice;
+                secondVC.receiveStringSeries =
+                    receiveStringSeries;
+                print("receiveStringSeries:", receiveStringSeries);
+            } else {
+                print("segue fail1");
+            }
+        } else {
+            print("segue fail2");
+        }
+    }
 
     
     
