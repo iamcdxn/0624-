@@ -96,7 +96,7 @@ class SearchViewController: UIViewController{
             secondVC.receiveStringSeriesChild = "\(receiveStringSeriesChild)"
             secondVC.receiveStringPlace = "\(receiveStringPlace)"
             secondVC.receiveStringTime = "\(receiveStringTime)"
-        
+            
         } else if segue.identifier == "SegueTime"{
             let secondVC: PickerViewControllerTime = segue.destinationViewController as! PickerViewControllerTime
             secondVC.receiveStringPrice = "\(receiveStringPrice)"
@@ -112,6 +112,9 @@ class SearchViewController: UIViewController{
             secondVC.receiveStringPlace = "\(receiveStringPlace)"
             secondVC.receiveStringTime = "\(receiveStringTime)"
             
+    }
+
+
             
         }
         
@@ -119,7 +122,6 @@ class SearchViewController: UIViewController{
     }
     
     
-    }
 
     
     
