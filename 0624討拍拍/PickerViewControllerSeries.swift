@@ -14,7 +14,13 @@ class PickerViewControllerSeries: UIViewController,UIPickerViewDataSource,UIPick
     
     @IBOutlet weak var picker: UIPickerView!
     @IBOutlet weak var backBtn: UIButton!
-        
+    
+    var receiveStringPlace = ""
+    var receiveStringSeries = ""
+    var receiveStringSeriesChild = ""
+    var receiveStringPrice = ""
+    var receiveStringTime = ""
+    
     //首先先把要顯示的資料分別存在兩個Array
 
     var keyArray: [String] = ["异国料理","咖啡馆","烧烤类","冰品饮料","火锅类"]
@@ -127,7 +133,11 @@ class PickerViewControllerSeries: UIViewController,UIPickerViewDataSource,UIPick
         
         let secondVC: SearchViewController = segue.destinationViewController as! SearchViewController
         
-        secondVC.receiveStringSeries = "\(WhatKey) \(WhatDict)"
+        secondVC.receiveStringSeries = "\(WhatKey)"
+        secondVC.receiveStringSeriesChild = "\(WhatDict)"
+        secondVC.receiveStringPrice = "\(receiveStringPrice)"
+        secondVC.receiveStringPlace = "\(receiveStringPlace)"
+        secondVC.receiveStringTime = "\(receiveStringTime)"
         
         
     }

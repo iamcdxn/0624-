@@ -384,7 +384,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="l7n-JO-Ngv" kind="show" id="eo0-Tm-bHt"/>
+                                    <segue destination="l7n-JO-Ngv" kind="show" identifier="SegueSeries" id="eo0-Tm-bHt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTr-To-zaY">
@@ -407,7 +407,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="VEe-QH-H1Z" kind="show" id="MuU-Du-MD9"/>
+                                    <segue destination="VEe-QH-H1Z" kind="show" identifier="SeguePrice" id="MuU-Du-MD9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taK-Ji-zah">
@@ -430,7 +430,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="hvm-Y0-dGT" kind="show" id="gYq-Pm-cmt"/>
+                                    <segue destination="hvm-Y0-dGT" kind="show" identifier="SegueTime" id="gYq-Pm-cmt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2262,7 +2262,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tTq-Uj-hNo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3077.25" y="597.5"/>
+            <point key="canvasLocation" x="3077.25" y="643.5"/>
         </scene>
         <!--選擇類別-->
         <scene sceneID="jlg-kn-lSw">
@@ -8217,18 +8217,18 @@
         <image name="yellow_stroke_btn" width="325" height="55"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xDw-yq-k6h"/>
-        <segue reference="Q8z-7u-yEB"/>
-        <segue reference="geG-un-QGl"/>
-        <segue reference="M3v-Fs-SC9"/>
+        <segue reference="ZR4-rK-4Xt"/>
+        <segue reference="DvP-BF-vGh"/>
+        <segue reference="eo0-Tm-bHt"/>
         <segue reference="SRw-LE-JwI"/>
-        <segue reference="Y6Q-4y-cGc"/>
+        <segue reference="xDw-yq-k6h"/>
+        <segue reference="M3v-Fs-SC9"/>
+        <segue reference="geG-un-QGl"/>
+        <segue reference="Q8z-7u-yEB"/>
+        <segue reference="L3h-0O-eEf"/>
         <segue reference="fXQ-X8-eA5"/>
         <segue reference="CWn-h5-5gy"/>
-        <segue reference="L3h-0O-eEf"/>
-        <segue reference="aHU-QF-V2u"/>
-        <segue reference="ZR4-rK-4Xt"/>
-        <segue reference="xaE-Nj-zne"/>
+        <segue reference="Y6Q-4y-cGc"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

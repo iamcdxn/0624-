@@ -23,6 +23,12 @@ class PickerViewControllerTime: UIViewController,UIPickerViewDataSource,UIPicker
     @IBOutlet weak var picker: UIPickerView!
     @IBOutlet var backBtn: UIButton!
     
+    var receiveStringPlace = ""
+    var receiveStringSeries = ""
+    var receiveStringSeriesChild = ""
+    var receiveStringPrice = ""
+    var receiveStringTime = ""
+    
     //首先先把要顯示的資料分別存在兩個Array
     let numberArray = ["早餐","早午餐","午餐","下午茶","晚餐","宵夜"]
     let fruitArray = ["咖啡专卖","复合式咖啡馆","甜点咖啡馆"]
@@ -122,6 +128,10 @@ class PickerViewControllerTime: UIViewController,UIPickerViewDataSource,UIPicker
         let secondVC: SearchViewController = segue.destinationViewController as! SearchViewController
         
         secondVC.receiveStringTime = "\(WhatNum)"
+        secondVC.receiveStringPrice = "\(receiveStringPrice)"
+        secondVC.receiveStringSeries = "\(receiveStringSeries)"
+        secondVC.receiveStringSeriesChild = "\(receiveStringSeriesChild)"
+        secondVC.receiveStringPlace = "\(receiveStringPlace)"
         
         
         

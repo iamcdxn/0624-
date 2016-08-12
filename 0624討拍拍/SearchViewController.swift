@@ -16,6 +16,7 @@ class SearchViewController: UIViewController{
     @IBOutlet weak var button2: UIButton!
     var receiveStringPlace = ""
     var receiveStringSeries = ""
+    var receiveStringSeriesChild = ""
     var receiveStringPrice = ""
     var receiveStringTime = ""
     
@@ -32,7 +33,7 @@ class SearchViewController: UIViewController{
         {
         button2.setTitle("请选择", forState: .Normal)
         }else{
-            button2.setTitle("\(receiveStringSeries)", forState: .Normal)
+            button2.setTitle("\(receiveStringSeries) \(receiveStringSeriesChild)", forState: .Normal)
             
             
         }
@@ -85,6 +86,37 @@ class SearchViewController: UIViewController{
         }
     }
 
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "SeguePrice" {
+            let secondVC: PickerViewControllerPrice = segue.destinationViewController as! PickerViewControllerPrice
+            secondVC.receiveStringPrice = "\(receiveStringPrice)"
+            secondVC.receiveStringSeries = "\(receiveStringSeries)"
+            secondVC.receiveStringSeriesChild = "\(receiveStringSeriesChild)"
+            secondVC.receiveStringPlace = "\(receiveStringPlace)"
+            secondVC.receiveStringTime = "\(receiveStringTime)"
+        
+        } else if segue.identifier == "SegueTime"{
+            let secondVC: PickerViewControllerTime = segue.destinationViewController as! PickerViewControllerTime
+            secondVC.receiveStringPrice = "\(receiveStringPrice)"
+            secondVC.receiveStringSeries = "\(receiveStringSeries)"
+            secondVC.receiveStringSeriesChild = "\(receiveStringSeriesChild)"
+            secondVC.receiveStringPlace = "\(receiveStringPlace)"
+            secondVC.receiveStringTime = "\(receiveStringTime)"
+        } else if segue.identifier == "SegueSeries" {
+            let secondVC: PickerViewControllerSeries = segue.destinationViewController as! PickerViewControllerSeries
+            secondVC.receiveStringPrice = "\(receiveStringPrice)"
+            secondVC.receiveStringSeries = "\(receiveStringSeries)"
+            secondVC.receiveStringSeriesChild = "\(receiveStringSeriesChild)"
+            secondVC.receiveStringPlace = "\(receiveStringPlace)"
+            secondVC.receiveStringTime = "\(receiveStringTime)"
+            
+            
+        }
+        
+        
+    }
     
     
     }
