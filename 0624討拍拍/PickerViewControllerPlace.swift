@@ -108,6 +108,8 @@ class PickerViewControllerPlace: UIViewController,UIPickerViewDataSource,UIPicke
             makeIndex = row
             pickerView.reloadComponent(1)
             WhatKey = keyArray[row]
+            var modelarray = carDict[keyArray[makeIndex]]
+            WhatDict = modelarray![0]
             print (WhatKey)
         } else {
             var modelarray = carDict[keyArray[makeIndex]]

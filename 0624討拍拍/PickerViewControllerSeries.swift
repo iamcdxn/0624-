@@ -35,6 +35,7 @@ class PickerViewControllerSeries: UIViewController,UIPickerViewDataSource,UIPick
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
     }
     
@@ -106,6 +107,8 @@ class PickerViewControllerSeries: UIViewController,UIPickerViewDataSource,UIPick
             makeIndex = row
             pickerView.reloadComponent(1)
             WhatKey = keyArray[row]
+            var modelarray = carDict[keyArray[makeIndex]]
+            WhatDict = modelarray![0]
         } else {
             var modelarray = carDict[keyArray[makeIndex]]
             WhatDict = modelarray![row]

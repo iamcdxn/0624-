@@ -56,7 +56,7 @@ class SearchViewController: UIViewController{
         //Mark-----變更顯示Title
         if receiveStringPlace == ""
         {
-            ButtonPlace.setTitle("我附近2", forState: .Normal)
+            ButtonPlace.setTitle("我附近", forState: .Normal)
         }else{
             ButtonPlace.setTitle("\(receiveStringPlace) \(receiveStringPlaceChild)" , forState: .Normal)
         }
