@@ -16,6 +16,7 @@ class PickerViewControllerPrice: UIViewController,UIPickerViewDataSource,UIPicke
     @IBOutlet var backBtn: UIButton!
     
     var receiveStringPlace = ""
+    var receiveStringPlaceChild = ""
     var receiveStringSeries = ""
     var receiveStringSeriesChild = ""
     var receiveStringPrice = ""
@@ -25,7 +26,7 @@ class PickerViewControllerPrice: UIViewController,UIPickerViewDataSource,UIPicke
     //首先先把要顯示的資料分別存在兩個Array
     let numberArray = ["頂級價位 2000元以上","高價位 1400-1999元","中高價位 800-1399元","中價位 400-799元","中低價位 200-399元","平價 1-200元/每人"]
     let fruitArray = ["咖啡专卖","复合式咖啡馆","甜点咖啡馆"]
-    var whatNum = "價錢是啥"
+    var whatNum = "頂級價位 2000元以上"
     
     
     override func viewDidLoad() {
@@ -111,6 +112,7 @@ class PickerViewControllerPrice: UIViewController,UIPickerViewDataSource,UIPicke
         secondVC.receiveStringSeries = "\(receiveStringSeries)"
         secondVC.receiveStringSeriesChild = "\(receiveStringSeriesChild)"
         secondVC.receiveStringPlace = "\(receiveStringPlace)"
+        secondVC.receiveStringPlaceChild = "\(receiveStringPlaceChild)"
         secondVC.receiveStringTime = "\(receiveStringTime)"
         
         

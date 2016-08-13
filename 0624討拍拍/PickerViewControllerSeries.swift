@@ -16,6 +16,7 @@ class PickerViewControllerSeries: UIViewController,UIPickerViewDataSource,UIPick
     @IBOutlet weak var backBtn: UIButton!
     
     var receiveStringPlace = ""
+    var receiveStringPlaceChild = ""
     var receiveStringSeries = ""
     var receiveStringSeriesChild = ""
     var receiveStringPrice = ""
@@ -27,8 +28,8 @@ class PickerViewControllerSeries: UIViewController,UIPickerViewDataSource,UIPick
     var makeIndex = 0
     var carDict : [String :[String]] = ["异国料理" : ["日式料理","美式料理","泰式料理","印度料理"], "咖啡馆": ["咖啡专卖","复合式咖啡馆","甜点咖啡馆"],"烧烤类":["碳烤小摊","烧肉店","居酒屋"],"冰品饮料": ["茶饮果汁", "茶品类", "甜汤类"], "火锅类": ["麻辣锅","涮涮锅","小火锅"]]
     
-    var WhatKey = "什麼類別"
-    var WhatDict = "什麼子項目"
+    var WhatKey = "异国料理"
+    var WhatDict = "日式料理"
 
     
     
@@ -89,7 +90,6 @@ class PickerViewControllerSeries: UIViewController,UIPickerViewDataSource,UIPick
         case 1:
             
             var modelarray = carDict[keyArray[makeIndex]]
-            
             return modelarray![row]
             
         default:
@@ -99,16 +99,7 @@ class PickerViewControllerSeries: UIViewController,UIPickerViewDataSource,UIPick
         
         
     }
-    
-//    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-//        if component == 0{
-//            print("number: \(numberArray[row])") //點擊第一個Component
-//        }else{
-//            print("fruit: \(fruitArray[row])")   //點擊第二個Component
-//        }
-//        
-//    }
-    
+
 
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if component == 0 {
@@ -137,6 +128,7 @@ class PickerViewControllerSeries: UIViewController,UIPickerViewDataSource,UIPick
         secondVC.receiveStringSeriesChild = "\(WhatDict)"
         secondVC.receiveStringPrice = "\(receiveStringPrice)"
         secondVC.receiveStringPlace = "\(receiveStringPlace)"
+        secondVC.receiveStringPlaceChild = "\(receiveStringPlaceChild)"
         secondVC.receiveStringTime = "\(receiveStringTime)"
         
         

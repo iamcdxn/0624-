@@ -11,10 +11,13 @@ import UIKit
 class SearchViewController: UIViewController{
     
     
+    
+    @IBOutlet var ButtonPlace: UIButton!
     @IBOutlet var ButtonPrice: UIButton!
     @IBOutlet var ButtonTime: UIButton!
-    @IBOutlet weak var button2: UIButton!
+    @IBOutlet weak var buttonSeries: UIButton!
     var receiveStringPlace = ""
+    var receiveStringPlaceChild = ""
     var receiveStringSeries = ""
     var receiveStringSeriesChild = ""
     var receiveStringPrice = ""
@@ -24,23 +27,16 @@ class SearchViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-       
-        
-        
+    
         //Mark-----變更顯示Title
-        
         if receiveStringSeries == ""
         {
-        button2.setTitle("请选择", forState: .Normal)
+        buttonSeries.setTitle("请选择", forState: .Normal)
         }else{
-            button2.setTitle("\(receiveStringSeries) \(receiveStringSeriesChild)", forState: .Normal)
-            
-            
+            buttonSeries.setTitle("\(receiveStringSeries) \(receiveStringSeriesChild)", forState: .Normal)
         }
         
         //Mark-----變更顯示Title
-        
-        
         if receiveStringPrice == ""
         {
             ButtonPrice.setTitle("请选择", forState: .Normal)
@@ -50,13 +46,19 @@ class SearchViewController: UIViewController{
         
         
         //Mark-----變更顯示Title
-        
-        
         if receiveStringTime == ""
         {
             ButtonTime.setTitle("请选择", forState: .Normal)
         }else{
             ButtonTime.setTitle("\(receiveStringTime)", forState: .Normal)
+        }
+        
+        //Mark-----變更顯示Title
+        if receiveStringPlace == ""
+        {
+            ButtonPlace.setTitle("我附近2", forState: .Normal)
+        }else{
+            ButtonPlace.setTitle("\(receiveStringPlace) \(receiveStringPlaceChild)" , forState: .Normal)
         }
         
     }
@@ -84,10 +86,6 @@ class SearchViewController: UIViewController{
         } else {
             print("segue fail2");
         }
-    }
-
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if segue.identifier == "SeguePrice" {
             let secondVC: PickerViewControllerPrice = segue.destinationViewController as! PickerViewControllerPrice
@@ -95,6 +93,7 @@ class SearchViewController: UIViewController{
             secondVC.receiveStringSeries = "\(receiveStringSeries)"
             secondVC.receiveStringSeriesChild = "\(receiveStringSeriesChild)"
             secondVC.receiveStringPlace = "\(receiveStringPlace)"
+            secondVC.receiveStringPlaceChild = "\(receiveStringPlaceChild)"
             secondVC.receiveStringTime = "\(receiveStringTime)"
             
         } else if segue.identifier == "SegueTime"{
@@ -103,6 +102,7 @@ class SearchViewController: UIViewController{
             secondVC.receiveStringSeries = "\(receiveStringSeries)"
             secondVC.receiveStringSeriesChild = "\(receiveStringSeriesChild)"
             secondVC.receiveStringPlace = "\(receiveStringPlace)"
+            secondVC.receiveStringPlaceChild = "\(receiveStringPlaceChild)"
             secondVC.receiveStringTime = "\(receiveStringTime)"
         } else if segue.identifier == "SegueSeries" {
             let secondVC: PickerViewControllerSeries = segue.destinationViewController as! PickerViewControllerSeries
@@ -110,16 +110,22 @@ class SearchViewController: UIViewController{
             secondVC.receiveStringSeries = "\(receiveStringSeries)"
             secondVC.receiveStringSeriesChild = "\(receiveStringSeriesChild)"
             secondVC.receiveStringPlace = "\(receiveStringPlace)"
+            secondVC.receiveStringPlaceChild = "\(receiveStringPlaceChild)"
             secondVC.receiveStringTime = "\(receiveStringTime)"
             
-    }
-
-
-            
+        } else if segue.identifier == "SeguePlace" {
+            let secondVC: PickerViewControllerPlace = segue.destinationViewController as! PickerViewControllerPlace
+            secondVC.receiveStringPrice = "\(receiveStringPrice)"
+            secondVC.receiveStringSeries = "\(receiveStringSeries)"
+            secondVC.receiveStringSeriesChild = "\(receiveStringSeriesChild)"
+            secondVC.receiveStringPlace = "\(receiveStringPlace)"
+            secondVC.receiveStringPlaceChild = "\(receiveStringPlaceChild)"
+            secondVC.receiveStringTime = "\(receiveStringTime)"
         }
-        
-        
+
     }
+    
+}
     
     
 
