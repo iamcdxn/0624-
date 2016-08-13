@@ -23,42 +23,50 @@ class SearchViewController: UIViewController{
     var receiveStringPrice = ""
     var receiveStringTime = ""
     
+    var normalText = "Hi am normal"
+    
+    var boldText  = "And I am BOLD!"
+    
+
+
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    
+        
+        
         //Mark-----變更顯示Title
         if receiveStringSeries == ""
         {
-        buttonSeries.setTitle("请选择", forState: .Normal)
+        buttonSeries.setTitle("类别   请选择", forState: .Normal)
         }else{
-            buttonSeries.setTitle("\(receiveStringSeries) \(receiveStringSeriesChild)", forState: .Normal)
+            buttonSeries.setTitle("类别   \(receiveStringSeries) \(receiveStringSeriesChild)", forState: .Normal)
         }
         
         //Mark-----變更顯示Title
         if receiveStringPrice == ""
         {
-            ButtonPrice.setTitle("请选择", forState: .Normal)
+            ButtonPrice.setTitle("价位   请选择", forState: .Normal)
         }else{
-            ButtonPrice.setTitle("\(receiveStringPrice)", forState: .Normal)
+            ButtonPrice.setTitle("价位   \(receiveStringPrice)", forState: .Normal)
         }
         
         
         //Mark-----變更顯示Title
         if receiveStringTime == ""
         {
-            ButtonTime.setTitle("请选择", forState: .Normal)
+            ButtonTime.setTitle("时段   请选择", forState: .Normal)
         }else{
-            ButtonTime.setTitle("\(receiveStringTime)", forState: .Normal)
+            ButtonTime.setTitle("时段   \(receiveStringTime)", forState: .Normal)
         }
         
         //Mark-----變更顯示Title
         if receiveStringPlace == ""
         {
-            ButtonPlace.setTitle("我附近", forState: .Normal)
+            ButtonPlace.setTitle("地区   我附近", forState: .Normal)
         }else{
-            ButtonPlace.setTitle("\(receiveStringPlace) \(receiveStringPlaceChild)" , forState: .Normal)
+            ButtonPlace.setTitle("地区   \(receiveStringPlace) \(receiveStringPlaceChild)" , forState: .Normal)
         }
         
     }
