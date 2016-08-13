@@ -78,7 +78,9 @@
 		D40C912F1D5E4F500061E646 /* Favorite.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D40C912D1D5E4F500061E646 /* Favorite.xcdatamodeld */; };
 		D40C91401D5E78AE0061E646 /* Favorite+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40C913E1D5E78AE0061E646 /* Favorite+CoreDataProperties.swift */; };
 		D40C91411D5E78AE0061E646 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40C913F1D5E78AE0061E646 /* Favorite.swift */; };
+		D42332A61D5FCC12007667A5 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42332A51D5FCC12007667A5 /* RestaurantViewController.swift */; };
 		D43D92DD1D5EA7AA00BF2E0E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D43D92DC1D5EA7AA00BF2E0E /* UIKit.framework */; };
+		D43D92E11D5FC33100BF2E0E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43D92E01D5FC33100BF2E0E /* MenuViewController.swift */; };
 		D48220E71D5E8F2C00EB8379 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48220E61D5E8F2C00EB8379 /* FavoriteViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -177,7 +179,9 @@
 		D40C912E1D5E4F500061E646 /* Favorite.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Favorite.xcdatamodel; sourceTree = "<group>"; };
 		D40C913E1D5E78AE0061E646 /* Favorite+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Favorite+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D40C913F1D5E78AE0061E646 /* Favorite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
+		D42332A51D5FCC12007667A5 /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		D43D92DC1D5EA7AA00BF2E0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D43D92E01D5FC33100BF2E0E /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = ../MenuViewController.swift; sourceTree = "<group>"; };
 		D48220E61D5E8F2C00EB8379 /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		DAF99A6D948D22A55A4EFD06 /* Pods_0624___UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_0624___UITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E06BDCA83BDCE54037934AE5 /* Pods-0624討拍拍Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-0624討拍拍Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-0624討拍拍Tests/Pods-0624討拍拍Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -266,7 +270,9 @@
 			isa = PBXGroup;
 			children = (
 				643812AC1D1CE177007D32A9 /* Main.storyboard */,
+				D42332A51D5FCC12007667A5 /* RestaurantViewController.swift */,
 				D48220E61D5E8F2C00EB8379 /* FavoriteViewController.swift */,
+				D43D92E01D5FC33100BF2E0E /* MenuViewController.swift */,
 				D40C91431D5E78E40061E646 /* Favorite */,
 				643812A61D1CE177007D32A9 /* AppDelegate.swift */,
 				6475E0261D4B7E4E001364D9 /* GoogleService-Info.plist */,
@@ -684,12 +690,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				643812D71D1CE43B007D32A9 /* LikedViewController.swift in Sources */,
+				D42332A61D5FCC12007667A5 /* RestaurantViewController.swift in Sources */,
 				643B5A751D295F0200535FEE /* SearchResult.swift in Sources */,
 				643B5A9F1D29B09100535FEE /* D7MenuPageController.swift in Sources */,
 				643B5A991D29AF2100535FEE /* D4MenuPageController.swift in Sources */,
 				643B5A951D29AE4200535FEE /* D2MenuPageController.swift in Sources */,
 				64D0A7881D4C3CBF001D41CC /* Try.swift in Sources */,
 				643B5A7F1D29981400535FEE /* B-RestaurantPageController.swift in Sources */,
+				D43D92E11D5FC33100BF2E0E /* MenuViewController.swift in Sources */,
 				648A2AFB1D2CAE9600268208 /* PickerViewControllerPrice.swift in Sources */,
 				6441A1BD1D2C46D4002A5E5C /* E3MenuPageController.swift in Sources */,
 				643B5AA11D29B10800535FEE /* D8MenuPageController.swift in Sources */,
