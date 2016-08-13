@@ -15,8 +15,8 @@ class PickerViewControllerPrice: UIViewController,UIPickerViewDataSource,UIPicke
     @IBOutlet weak var picker: UIPickerView!
     @IBOutlet var backBtn: UIButton!
     
-    var receiveStringPlace = ""
-    var receiveStringPlaceChild = ""
+    var receiveStringPlaceCity = ""
+    var receiveStringPlaceDistrict = ""
     var receiveStringSeries = ""
     var receiveStringSeriesChild = ""
     var receiveStringPrice = ""
@@ -111,8 +111,8 @@ class PickerViewControllerPrice: UIViewController,UIPickerViewDataSource,UIPicke
         secondVC.receiveStringPrice = "\(whatNum)"
         secondVC.receiveStringSeries = "\(receiveStringSeries)"
         secondVC.receiveStringSeriesChild = "\(receiveStringSeriesChild)"
-        secondVC.receiveStringPlace = "\(receiveStringPlace)"
-        secondVC.receiveStringPlaceChild = "\(receiveStringPlaceChild)"
+        secondVC.receiveStringPlaceCity = "\(receiveStringPlaceCity)"
+        secondVC.receiveStringPlaceDistrict = "\(receiveStringPlaceDistrict)"
         secondVC.receiveStringTime = "\(receiveStringTime)"
         
         

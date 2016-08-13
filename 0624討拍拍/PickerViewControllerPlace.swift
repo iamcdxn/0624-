@@ -15,8 +15,8 @@ class PickerViewControllerPlace: UIViewController,UIPickerViewDataSource,UIPicke
     @IBOutlet weak var picker: UIPickerView!
     @IBOutlet weak var backBtn: UIButton!
     
-    var receiveStringPlace = ""
-    var receiveStringPlaceChild = ""
+    var receiveStringPlaceCity = ""
+    var receiveStringPlaceDistrict = ""
     var receiveStringSeries = ""
     var receiveStringSeriesChild = ""
     var receiveStringPrice = ""
@@ -35,8 +35,6 @@ class PickerViewControllerPlace: UIViewController,UIPickerViewDataSource,UIPicke
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print(receiveStringPlace)
         
     }
     
@@ -129,8 +127,8 @@ class PickerViewControllerPlace: UIViewController,UIPickerViewDataSource,UIPicke
         
         let secondVC: SearchViewController = segue.destinationViewController as! SearchViewController
         
-        secondVC.receiveStringPlace = "\(WhatKey)"
-        secondVC.receiveStringPlaceChild = "\(WhatDict)"
+        secondVC.receiveStringPlaceCity = "\(WhatKey)"
+        secondVC.receiveStringPlaceDistrict = "\(WhatDict)"
         secondVC.receiveStringSeries = "\(receiveStringSeries)"
         secondVC.receiveStringSeriesChild = "\(receiveStringSeriesChild)"
         secondVC.receiveStringPrice = "\(receiveStringPrice)"

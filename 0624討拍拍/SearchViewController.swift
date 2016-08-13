@@ -16,8 +16,8 @@ class SearchViewController: UIViewController{
     @IBOutlet var ButtonPrice: UIButton!
     @IBOutlet var ButtonTime: UIButton!
     @IBOutlet weak var buttonSeries: UIButton!
-    var receiveStringPlace = ""
-    var receiveStringPlaceChild = ""
+    var receiveStringPlaceCity = ""
+    var receiveStringPlaceDistrict = ""
     var receiveStringSeries = ""
     var receiveStringSeriesChild = ""
     var receiveStringPrice = ""
@@ -62,11 +62,11 @@ class SearchViewController: UIViewController{
         }
         
         //Mark-----變更顯示Title
-        if receiveStringPlace == ""
+        if receiveStringPlaceCity == ""
         {
             ButtonPlace.setTitle("地区   我附近", forState: .Normal)
         }else{
-            ButtonPlace.setTitle("地区   \(receiveStringPlace) \(receiveStringPlaceChild)" , forState: .Normal)
+            ButtonPlace.setTitle("地区   \(receiveStringPlaceCity) \(receiveStringPlaceDistrict)" , forState: .Normal)
         }
         
     }
@@ -82,7 +82,7 @@ class SearchViewController: UIViewController{
                 
                 secondVC.receiveStringTime = receiveStringTime;
                 secondVC.receiveStringPlace =
-                    receiveStringPlace;
+                    receiveStringPlaceCity;
                 secondVC.receiveStringPrice =
                     receiveStringPrice;
                 secondVC.receiveStringSeries =
@@ -100,8 +100,8 @@ class SearchViewController: UIViewController{
             secondVC.receiveStringPrice = "\(receiveStringPrice)"
             secondVC.receiveStringSeries = "\(receiveStringSeries)"
             secondVC.receiveStringSeriesChild = "\(receiveStringSeriesChild)"
-            secondVC.receiveStringPlace = "\(receiveStringPlace)"
-            secondVC.receiveStringPlaceChild = "\(receiveStringPlaceChild)"
+            secondVC.receiveStringPlaceCity = "\(receiveStringPlaceCity)"
+            secondVC.receiveStringPlaceDistrict = "\(receiveStringPlaceDistrict)"
             secondVC.receiveStringTime = "\(receiveStringTime)"
             
         } else if segue.identifier == "SegueTime"{
@@ -109,16 +109,16 @@ class SearchViewController: UIViewController{
             secondVC.receiveStringPrice = "\(receiveStringPrice)"
             secondVC.receiveStringSeries = "\(receiveStringSeries)"
             secondVC.receiveStringSeriesChild = "\(receiveStringSeriesChild)"
-            secondVC.receiveStringPlace = "\(receiveStringPlace)"
-            secondVC.receiveStringPlaceChild = "\(receiveStringPlaceChild)"
+            secondVC.receiveStringPlaceCity = "\(receiveStringPlaceCity)"
+            secondVC.receiveStringPlaceDistrict = "\(receiveStringPlaceDistrict)"
             secondVC.receiveStringTime = "\(receiveStringTime)"
         } else if segue.identifier == "SegueSeries" {
             let secondVC: PickerViewControllerSeries = segue.destinationViewController as! PickerViewControllerSeries
             secondVC.receiveStringPrice = "\(receiveStringPrice)"
             secondVC.receiveStringSeries = "\(receiveStringSeries)"
             secondVC.receiveStringSeriesChild = "\(receiveStringSeriesChild)"
-            secondVC.receiveStringPlace = "\(receiveStringPlace)"
-            secondVC.receiveStringPlaceChild = "\(receiveStringPlaceChild)"
+            secondVC.receiveStringPlaceCity = "\(receiveStringPlaceCity)"
+            secondVC.receiveStringPlaceDistrict = "\(receiveStringPlaceDistrict)"
             secondVC.receiveStringTime = "\(receiveStringTime)"
             
         } else if segue.identifier == "SeguePlace" {
@@ -126,8 +126,8 @@ class SearchViewController: UIViewController{
             secondVC.receiveStringPrice = "\(receiveStringPrice)"
             secondVC.receiveStringSeries = "\(receiveStringSeries)"
             secondVC.receiveStringSeriesChild = "\(receiveStringSeriesChild)"
-            secondVC.receiveStringPlace = "\(receiveStringPlace)"
-            secondVC.receiveStringPlaceChild = "\(receiveStringPlaceChild)"
+            secondVC.receiveStringPlaceCity = "\(receiveStringPlaceCity)"
+            secondVC.receiveStringPlaceDistrict = "\(receiveStringPlaceDistrict)"
             secondVC.receiveStringTime = "\(receiveStringTime)"
         }
 
