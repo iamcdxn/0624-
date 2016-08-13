@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class D4MenuRestaurantPageController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     

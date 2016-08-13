@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
+import CoreData
 
 class SaveDataTest: UIViewController {
    

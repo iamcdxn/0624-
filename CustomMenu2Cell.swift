@@ -9,6 +9,7 @@
 // 菜單頁面的CustomCell
 
 import UIKit
+import CoreData
 
 class CustomMenu2Cell: UITableViewCell {
     

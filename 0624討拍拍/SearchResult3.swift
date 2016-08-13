@@ -8,6 +8,7 @@
 
 
 import UIKit
+import CoreData
 
 class SearchResultController3: UIViewController, UITableViewDelegate, UITableViewDataSource {
     

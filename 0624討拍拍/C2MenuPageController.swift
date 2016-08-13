@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import CoreData
+import Firebase
+import FirebaseDatabase
 
 class C2MenuRestaurantPageController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -15,7 +18,8 @@ class C2MenuRestaurantPageController: UIViewController, UITableViewDelegate, UIT
     var titles = ["红油炒手干面","麻辣干面","炸酱干面","麻酱干面"]
     var prices = ["70 元","60 元","50 元","50 元"]
     
-    
+    var id:String?
+    var ref: FIRDatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +50,18 @@ class C2MenuRestaurantPageController: UIViewController, UITableViewDelegate, UIT
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
+        // 取得 Context
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let context = appDelegate.managedObjectContext
+        
+        // 建立 Entity 物件
+        let favorite = NSEntityDescription.insertNewObjectForEntityForName("Favorite", inManagedObjectContext: context) as! Favorite
+        
+        favorite.id = self.id
+        print(favorite)
+        
+        // 儲存
+        appDelegate.saveContext()
         let alert = UIAlertController(title: "提示", message: "已加入收藏菜色", preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)

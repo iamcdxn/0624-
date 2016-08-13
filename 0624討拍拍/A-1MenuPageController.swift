@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class AMenuRestaurantPageController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     

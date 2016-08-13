@@ -8,6 +8,7 @@
 
 
 import UIKit
+import CoreData
 
 class B5MenuRestaurantPageController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     

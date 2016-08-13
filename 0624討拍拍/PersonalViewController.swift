@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class PersonalViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
         

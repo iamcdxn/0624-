@@ -10,6 +10,7 @@
 // 搜尋結果的Custom Cell
 
 import UIKit
+import CoreData
 
 class CustomCell: UITableViewCell {
     

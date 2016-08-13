@@ -10,6 +10,7 @@
 // 餐廳頁面的CustomCell
 
 import UIKit
+import CoreData
 
 class CustomRestaurantCell: UITableViewCell {
     

@@ -10,7 +10,7 @@
 import UIKit
 import Foundation
 import Firebase
-
+import CoreData
 
 
 class SearchResultController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -22,9 +22,6 @@ class SearchResultController: UIViewController, UITableViewDelegate, UITableView
     var identities = [String]()
     var names = ["山西刀削面","小木屋咖啡馆","老董牛肉细粉面店","熊巴吐司（台北复兴店）","刘记川味牛肉面"]
     var services = ["3.9颗星","4.2颗星","3.5颗星","3.6颗星","3.3颗星"]
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

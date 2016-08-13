@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class BRestaurantPageController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     

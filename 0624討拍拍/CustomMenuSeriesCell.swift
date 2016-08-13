@@ -9,6 +9,7 @@
 // 食物類別頁面的CustomCell
 
 import UIKit
+import CoreData
 
 class CustomMenuSeriesCell: UITableViewCell {
     

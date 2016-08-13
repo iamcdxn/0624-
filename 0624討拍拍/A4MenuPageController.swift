@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class A4MenuRestaurantPageController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     

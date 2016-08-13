@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import CoreData
+import Firebase
+import FirebaseDatabase
 
 class C3MenuRestaurantPageController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -15,7 +18,8 @@ class C3MenuRestaurantPageController: UIViewController, UITableViewDelegate, UIT
     var titles = ["半筋半肉汤","牛肉汤","牛肉汤馄饨","馄饨汤","红油炒手"]
     var prices = ["120 元","100 元","50 元","40 元","60 元"]
     
-    
+    var id:String?
+    var ref: FIRDatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +49,16 @@ class C3MenuRestaurantPageController: UIViewController, UITableViewDelegate, UIT
     // - MARK: 按下選項時會跳出 UIAlert Message -----
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        // 取得 Context
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let context = appDelegate.managedObjectContext
+        
+        // 建立 Entity 物件
+        let favorite = NSEntityDescription.insertNewObjectForEntityForName("Favorite", inManagedObjectContext: context) as! Favorite
+        
+        favorite.id = self.id
+        print(favorite)
         
         let alert = UIAlertController(title: "提示", message: "已加入收藏菜色", preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))

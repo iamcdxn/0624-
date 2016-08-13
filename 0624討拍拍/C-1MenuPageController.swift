@@ -9,6 +9,9 @@
 
 
 import UIKit
+import CoreData
+import Firebase
+import FirebaseDatabase
 
 class CMenuRestaurantPageController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -20,7 +23,7 @@ class CMenuRestaurantPageController: UIViewController, UITableViewDelegate, UITa
     var titles = ["面食","干面","汤类"]
     var contents = ["（可选面、米粉或冬粉，加大加10元）11 项","（加大加10元） 4 项","5 项"]
     
-    
+    var id:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +31,6 @@ class CMenuRestaurantPageController: UIViewController, UITableViewDelegate, UITa
         
         identities = ["C麵食","C乾麵","C湯類"]
         //尋找Storyboard的identities，Trigger Segue
-        
         
     }
     
@@ -52,11 +54,26 @@ class CMenuRestaurantPageController: UIViewController, UITableViewDelegate, UITa
         return cell
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "C麵食" {
+            if let cMenuRestaurantPageController = segue.destinationViewController as? C1MenuRestaurantPageController {
+                cMenuRestaurantPageController.id = sender as? String
+            }
+        } else if (segue.identifier == "C乾麵") {
+            if let cMenuRestaurantPageController = segue.destinationViewController as? C2MenuRestaurantPageController {
+                cMenuRestaurantPageController.id = sender as? String
+            }
+        } else if (segue.identifier == "C湯類") {
+            if let cMenuRestaurantPageController = segue.destinationViewController as? C3MenuRestaurantPageController {
+                cMenuRestaurantPageController.id = sender as? String
+            }
+        }
+    }
+    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         let vcName = identities[indexPath.row]
-        let viewController = storyboard?.instantiateViewControllerWithIdentifier(vcName)
-        self.navigationController?.pushViewController(viewController!, animated: true)
+        performSegueWithIdentifier(vcName, sender: self.id)
         
     }
     

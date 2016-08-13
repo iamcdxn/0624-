@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class B3MenuRestaurantPageController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
