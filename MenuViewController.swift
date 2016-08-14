@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import CoreData
+import Firebase
+import FirebaseDatabase
 
 class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -14,14 +17,37 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     var dataSource = []
     var id = String()
-    var titles = ["汤面类","干面类","汤类","其他"]
-    var contents = ["9 项","9 项","7 项","1 项"]
-
+    var ref:FIRDatabaseReference!
+    //var titles = ["汤面类","干面类","汤类","其他"]
+    //var contents = ["9 项","9 项","7 项","1 项"]
+    
+    var categoryNames = [String]()
+    var categoryCount = [UInt]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        ref = FIRDatabase.database().reference()
+        
+        ref.child("menu/\(id)").observeEventType(.Value, withBlock: { snapshot in
+            var categoryKeys = [String]()
+            for cat in snapshot.children {
+                categoryKeys.append(cat.key)
+            }
+            
+            for k in categoryKeys {
+                let key = String(k)
+                self.ref.child("menu/\(self.id)/\(key)/name").observeEventType(.Value, withBlock: { snapshot in
+                    self.categoryNames.append(String(snapshot.value!))
+                })
+                self.ref.child("menu/\(self.id)/\(key)/members").observeEventType(.Value, withBlock: { snapshot in
+                    self.categoryCount.append(snapshot.childrenCount)
+                })
+            }
+        })
+        print("...\(self.categoryNames)")
+        print("...\(self.categoryCount)")
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,7 +64,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return titles.count
+        return categoryNames.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -52,8 +78,11 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
          * Do Search From Firebase Database
          */
         
-        cell?.textLabel?.text = titles[indexPath.row]
-        cell?.detailTextLabel?.text = contents[indexPath.row]
+        print(categoryNames)
+        print(categoryCount)
+        
+        cell?.textLabel?.text = String(categoryNames[indexPath.row])
+        cell?.detailTextLabel?.text = String(categoryCount[indexPath.row])
         
         return cell!
     }

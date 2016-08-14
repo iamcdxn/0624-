@@ -988,7 +988,6 @@
                         <outlet property="identitiyTable" destination="1tX-WF-YJc" id="QnD-09-GD3"/>
                         <outlet property="menuButton" destination="Zw5-ui-2p2" id="IGQ-Wo-E93"/>
                         <outlet property="restaurantAddress" destination="hNB-gX-3hV" id="fpV-sZ-x0b"/>
-                        <outlet property="restaurantTitle" destination="1SV-gs-LfZ" id="b6b-BV-Vdw"/>
                         <segue destination="vmG-RK-adl" kind="push" identifier="toMenu" id="H1e-zX-1dz"/>
                     </connections>
                 </viewController>

@@ -13,7 +13,6 @@ import FirebaseDatabase
 
 class RestaurantViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet weak var restaurantTitle: UINavigationItem!
     @IBOutlet weak var restaurantAddress: UILabel!
     @IBOutlet weak var menuButton: UIButton!
     @IBOutlet weak var favoriteButton: UIButton!
@@ -21,7 +20,7 @@ class RestaurantViewController: UIViewController, UITableViewDataSource, UITable
     
     var id = String()
     var dataSource = []
-    var labelText = ""
+    var ref:FIRDatabaseReference!
     
     var titles = ["近期优惠","营业时间","店家评价","平均价位","店家电话","菜单更新时间","备注","給菜單提供者一個鼓勵吧！"]
     var contents = ["暂无","上午11点 至 下午9点","3.5颗星","175元","02-2369-5198","2016.4","无",""]
@@ -31,15 +30,24 @@ class RestaurantViewController: UIViewController, UITableViewDataSource, UITable
         
         // Do any additional setup after loading the view.
         
-        self.restaurantAddress.text = self.labelText
-        self.restaurantAddress.textColor = UIColor(red: 1, green: 0.73, blue: 0.02, alpha: 1)
-        self.restaurantAddress.textAlignment = NSTextAlignment.Center
+        ref = FIRDatabase.database().reference()
         
-        self.menuButton.setTitleColor(UIColor(red: 0, green: 0.08, blue: 0.34, alpha: 1), forState: UIControlState.Normal)
-        self.menuButton.setTitle("浏览菜单", forState: UIControlState.Normal)
+        ref.child("res/\(id)/name").observeEventType(.Value, withBlock: { snapshot in
+            self.title = String(snapshot.value!)
+        })
         
-        self.favoriteButton.setTitleColor(UIColor(red: 1, green: 0.73, blue:0.02, alpha:1), forState: UIControlState.Normal)
-        self.favoriteButton.setTitle("浏览已收藏菜色", forState: UIControlState.Normal)
+        ref.child("res/\(id)/displayAddress").observeEventType(.Value, withBlock: { snapshot in
+            self.restaurantAddress.text = String(snapshot.value!)
+        })
+        
+        restaurantAddress.textColor = UIColor(red: 1, green: 0.73, blue: 0.02, alpha: 1)
+        restaurantAddress.textAlignment = NSTextAlignment.Center
+        
+        menuButton.setTitleColor(UIColor(red: 0, green: 0.08, blue: 0.34, alpha: 1), forState: UIControlState.Normal)
+        menuButton.setTitle("浏览菜单", forState: UIControlState.Normal)
+        
+        favoriteButton.setTitleColor(UIColor(red: 1, green: 0.73, blue:0.02, alpha:1), forState: UIControlState.Normal)
+        favoriteButton.setTitle("浏览已收藏菜色", forState: UIControlState.Normal)
     }
     
     override func didReceiveMemoryWarning() {
