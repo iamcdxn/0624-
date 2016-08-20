@@ -15,5 +15,8 @@ import CoreData
 extension Favorite {
 
     @NSManaged var id: String?
+    @NSManaged var name: String?
+    @NSManaged var price: String?
+    @NSManaged var restaurant: String?
 
 }

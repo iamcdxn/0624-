@@ -56,9 +56,12 @@ class RestaurantViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     @IBAction func toMenu(sender: AnyObject) {
-        performSegueWithIdentifier("toMenu", sender: self.id)
+        self.performSegueWithIdentifier("toMenu", sender: self.id)
     }
     
+    @IBAction func toFavorite(sender: AnyObject) {
+        self.performSegueWithIdentifier("toSave", sender: self.title!)
+    }
     
     // MARK: -- UITableViewDataSource
     
@@ -94,6 +97,11 @@ class RestaurantViewController: UIViewController, UITableViewDataSource, UITable
         if segue.identifier == "toMenu" {
             if let menuViewController = segue.destinationViewController as? MenuViewController {
                 menuViewController.id = sender as! String
+                menuViewController.name = self.title!
+            }
+        } else if segue.identifier == "toSave" {
+            if let saveViewController = segue.destinationViewController as? SaveViewController {
+                saveViewController.name = sender as! String
             }
         }
     }

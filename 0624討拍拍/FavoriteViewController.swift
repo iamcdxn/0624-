@@ -12,15 +12,19 @@ import Firebase
 import FirebaseDatabase
 
 class FavoriteViewController: UIViewController, UITableViewDataSource {
-
-    @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var favoriteTable: UITableView!
+    var children = [AnyObject]()
     var dataSource = []
+    var ids = [String]()
+    var restaurants = [String]()
     var ref: FIRDatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
                 // Do any additional setup after loading the view.
         ref = FIRDatabase.database().reference()
+        
         loadData()
         // 加入通知
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "loadData", name: NSManagedObjectContextDidSaveNotification, object: nil)
@@ -40,12 +44,22 @@ class FavoriteViewController: UIViewController, UITableViewDataSource {
         do {
             // 將查詢結果存入 data source
             dataSource = try context.executeFetchRequest(request)
-            tableView.reloadData()
+            for data in dataSource {
+                let favorite = data as! Favorite
+                if restaurants.contains(favorite.restaurant!) {
+                    
+                } else {
+                    restaurants.append(favorite.restaurant!)
+                    ids.append(favorite.id!)
+                }
+            }
+            self.favoriteTable.reloadData()
         }
         catch let error as NSError {
             // 錯誤處理
             print("error", error.description)
         }
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,52 +68,35 @@ class FavoriteViewController: UIViewController, UITableViewDataSource {
     }
     
     // - MARK: -- UITableViewDataSource
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        cell.backgroundColor = UIColor(red: 0, green: 0.08, blue: 0.34, alpha: 1)
+        cell.textLabel?.textColor = UIColor.whiteColor()
+    }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(dataSource.count)
-        return dataSource.count
+        return restaurants.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCellWithIdentifier("favoriteCell")
-        let favorite = dataSource[indexPath.row] as! Favorite
-        //cell?.textLabel?.text = favorite.id
-        
-        ref.child("res/" + favorite.id! + "/name").observeEventType(.Value, withBlock: { snapshot in
-            if snapshot.value is NSNull {
-                print("error")
-                cell?.textLabel?.text = "ERROR"
-            } else {
-                cell?.textLabel?.text = snapshot.value as? String
-            }
-        })
+
+        cell?.textLabel?.text = restaurants[indexPath.row]
         
         return cell!
     }
-
-    // MARK: -- Delete
     
-    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
-    }
+    // MARK: -- UITableViewDelegate
     
-    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        
-        if editingStyle == .Delete {
-            
-            // 取得 TtodoItem
-            let favorite = dataSource[indexPath.row] as? Favorite
-            
-            // 取得 Context
-            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-            let context = appDelegate.managedObjectContext
-            
-            // 刪除 TodoItem
-            context.deleteObject(favorite!)
-            
-            appDelegate.saveContext()
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toDetail" {
+            if let restaurantViewController = segue.destinationViewController as? RestaurantViewController {
+                let id = String(sender!)
+                restaurantViewController.id = id as String
+            }
         }
     }
-
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        performSegueWithIdentifier("toDetail", sender: ids[indexPath.row])
+    }
 }
