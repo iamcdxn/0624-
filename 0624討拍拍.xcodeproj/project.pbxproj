@@ -79,6 +79,8 @@
 		D42C8ADB1D68EE950029919E /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C8ADA1D68EE950029919E /* SaveViewController.swift */; };
 		D43D92DD1D5EA7AA00BF2E0E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D43D92DC1D5EA7AA00BF2E0E /* UIKit.framework */; };
 		D48220E71D5E8F2C00EB8379 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48220E61D5E8F2C00EB8379 /* FavoriteViewController.swift */; };
+		D4E9D6AB1D6A1C87007831C3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E9D6AA1D6A1C87007831C3 /* SignUpViewController.swift */; };
+		D4E9D6AF1D6A1F01007831C3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E9D6AE1D6A1F01007831C3 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,6 +179,8 @@
 		D42C8ADA1D68EE950029919E /* SaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
 		D43D92DC1D5EA7AA00BF2E0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D48220E61D5E8F2C00EB8379 /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		D4E9D6AA1D6A1C87007831C3 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D4E9D6AE1D6A1F01007831C3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DAF99A6D948D22A55A4EFD06 /* Pods_0624___UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_0624___UITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E06BDCA83BDCE54037934AE5 /* Pods-0624討拍拍Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-0624討拍拍Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-0624討拍拍Tests/Pods-0624討拍拍Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FCF4B45E26C19FB0267FA133 /* Pods-0624討拍拍.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-0624討拍拍.release.xcconfig"; path = "Pods/Target Support Files/Pods-0624討拍拍/Pods-0624討拍拍.release.xcconfig"; sourceTree = "<group>"; };
@@ -264,6 +268,8 @@
 			isa = PBXGroup;
 			children = (
 				643812AC1D1CE177007D32A9 /* Main.storyboard */,
+				D4E9D6AE1D6A1F01007831C3 /* Constants.swift */,
+				D4E9D6AA1D6A1C87007831C3 /* SignUpViewController.swift */,
 				D42C8ADA1D68EE950029919E /* SaveViewController.swift */,
 				D42332A51D5FCC12007667A5 /* RestaurantViewController.swift */,
 				D48220E61D5E8F2C00EB8379 /* FavoriteViewController.swift */,
@@ -681,6 +687,7 @@
 				643B5A951D29AE4200535FEE /* D2MenuPageController.swift in Sources */,
 				64D0A7881D4C3CBF001D41CC /* Try.swift in Sources */,
 				643B5A7F1D29981400535FEE /* B-RestaurantPageController.swift in Sources */,
+				D4E9D6AF1D6A1F01007831C3 /* Constants.swift in Sources */,
 				648A2AFB1D2CAE9600268208 /* PickerViewControllerPrice.swift in Sources */,
 				6441A1BD1D2C46D4002A5E5C /* E3MenuPageController.swift in Sources */,
 				643B5AA11D29B10800535FEE /* D8MenuPageController.swift in Sources */,
@@ -726,6 +733,7 @@
 				643B5A831D299AB700535FEE /* D-RestaurantPageController.swift in Sources */,
 				643B5AB81D29C58900535FEE /* A1MenuPageController.swift in Sources */,
 				643B5A911D29AA1200535FEE /* D1MenuPageController.swift in Sources */,
+				D4E9D6AB1D6A1C87007831C3 /* SignUpViewController.swift in Sources */,
 				643B5AB11D29C12900535FEE /* B3MenuPageController.swift in Sources */,
 				643B5A9D1D29B02000535FEE /* D6MenuPageController.swift in Sources */,
 				643B5A931D29AAFF00535FEE /* CustomMenu2Cell.swift in Sources */,

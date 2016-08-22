@@ -13,12 +13,12 @@ import CoreData
 
 class SaveDataTest: UIViewController {
    
-    var ref: FIRDatabaseReference!
+    @IBOutlet weak var emailText: UITextField!
+    @IBOutlet weak var passwdText: UITextField!
+    @IBOutlet weak var loginBtn: UIButton!
+    @IBOutlet weak var signUpBtn: UIButton!
     
-    @IBOutlet var NameTextField: UITextField!
-    @IBOutlet var AddressTextField: UITextField!
-    @IBOutlet var TelTextFIeld: UITextField!
-    @IBOutlet var GoBtn: UIButton!
+    var ref: FIRDatabaseReference!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,24 +34,10 @@ class SaveDataTest: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    @IBAction func GoBtnPressed(sender: AnyObject) {
-        
-        let resName: String = NameTextField.text!
-        let resAddress: String = AddressTextField.text!
-        let resTel: String = TelTextFIeld.text!
-        
-        self.ref.child("restaurant").child(resName).setValue(["Address": resAddress, "Tel": resTel])
-        
-        
-    }
-    
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         //按任何地方收起鍵盤
-        NameTextField.resignFirstResponder()
-        AddressTextField.resignFirstResponder()
-        TelTextFIeld.resignFirstResponder()
-
+        emailText.resignFirstResponder()
+        passwdText.resignFirstResponder()
 
     }
     

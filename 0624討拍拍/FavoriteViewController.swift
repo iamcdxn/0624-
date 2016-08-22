@@ -32,6 +32,7 @@ class FavoriteViewController: UIViewController, UITableViewDataSource {
     }
     
     func loadData() {
+        self.restaurants.removeAll()
         // 取得 Context
         let appDelegate = UIApplication.sharedApplication().delegate
             as! AppDelegate

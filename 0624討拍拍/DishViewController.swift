@@ -109,7 +109,7 @@ class DishViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         // 儲存
         if duplicate == true {
-            let alert = UIAlertController(title: "提示", message: "菜色已存在", preferredStyle: UIAlertControllerStyle.Alert)
+            let alert = UIAlertController(title: "提示", message: "菜色已收藏", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
         } else {
