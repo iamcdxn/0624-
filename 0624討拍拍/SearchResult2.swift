@@ -88,6 +88,9 @@ class SearchResult2Controller: UIViewController, UITableViewDelegate, UITableVie
                                         self.list = intersect
                                     }
                                 }
+                            } else {
+                                isFirstFilterFlag = false
+                                self.list.removeAll()
                             }
                         }
                     }
@@ -133,6 +136,9 @@ class SearchResult2Controller: UIViewController, UITableViewDelegate, UITableVie
                                         self.list = intersect
                                     }
                                 }
+                            } else {
+                                isFirstFilterFlag = false
+                                self.list.removeAll()
                             }
                         }
                     }
@@ -178,6 +184,9 @@ class SearchResult2Controller: UIViewController, UITableViewDelegate, UITableVie
                                         self.list = intersect
                                     }
                                 }
+                            } else {
+                                isFirstFilterFlag = false
+                                self.list.removeAll()
                             }
                         }
                     }
@@ -223,6 +232,9 @@ class SearchResult2Controller: UIViewController, UITableViewDelegate, UITableVie
                                         self.list = intersect
                                     }
                                 }
+                            } else {
+                                isFirstFilterFlag = false
+                                self.list.removeAll()
                             }
                         }
                     }
