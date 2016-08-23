@@ -118,8 +118,10 @@ class SpeakViewController: UIViewController,UITextFieldDelegate, UIPickerViewDat
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toSearchResult" {
             if let searchResultontroller = segue.destinationViewController as? SearchResultController {
-                let query = sender![0] as! String
-                let filter = sender![1] as! String
+                let arr:[String] = sender as! [String]
+                let query = arr[0]
+                let filter = arr[1]
+                
                 var ftr = String()
                 if filter == "依店家名稱搜尋" {
                     ftr = "0"

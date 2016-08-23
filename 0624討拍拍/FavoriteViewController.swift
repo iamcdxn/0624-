@@ -27,12 +27,13 @@ class FavoriteViewController: UIViewController, UITableViewDataSource {
         
         loadData()
         // 加入通知
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "loadData", name: NSManagedObjectContextDidSaveNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(FavoriteViewController.loadData), name: NSManagedObjectContextDidSaveNotification, object: nil)
 
     }
     
     func loadData() {
         self.restaurants.removeAll()
+        self.ids.removeAll()
         // 取得 Context
         let appDelegate = UIApplication.sharedApplication().delegate
             as! AppDelegate
