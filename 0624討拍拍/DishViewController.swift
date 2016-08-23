@@ -69,9 +69,9 @@ class DishViewController: UIViewController, UITableViewDataSource, UITableViewDe
          * Do Search From Firebase Database
          */
         
-        cell?.textLabel?.text = dishes[indexPath.row].value["name"] as? String
+        cell?.textLabel?.text = dishes[indexPath.row].value!["name"] as? String
         var price:Int?
-        price = dishes[indexPath.row].value["price"] as? Int
+        price = dishes[indexPath.row].value!["price"] as? Int
         cell?.detailTextLabel?.text = "\(price!)"
         
         return cell!
@@ -89,9 +89,9 @@ class DishViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let context = appDelegate.managedObjectContext
         
-        let name = dishes[indexPath.row].value["name"] as? String
+        let name = dishes[indexPath.row].value!["name"] as? String
         var price:Int?
-        price = dishes[indexPath.row].value["price"] as? Int
+        price = dishes[indexPath.row].value!["price"] as? Int
         
         var duplicate = false
         let request = NSFetchRequest(entityName: "Favorite")
