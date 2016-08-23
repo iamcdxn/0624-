@@ -50,14 +50,16 @@ class SearchResult2Controller: UIViewController, UITableViewDelegate, UITableVie
         {snapshot in
             
             if self.receiveStringTime != "" {
+                print("Time")
             //從不同的區塊中做餐廳id的篩選，childSnapshotForPath可以往下做區塊導引
             if let categories = snapshot.childSnapshotForPath("categories").children.allObjects as? [FIRDataSnapshot]{
+                var isMatch = false
                 for category in categories{
                     
                     //從餐廳時間的區塊群中一個一個拿出餐廳時間名稱來比對
                     if let name = category.value!["name"] as? String{
                         if name == self.receiveStringTime{
-                            
+                            isMatch = true
                             //比對符合者，從該處往下做區塊導引拿取其成員
                             if let members = category.childSnapshotForPath("members").children.allObjects as? [FIRDataSnapshot]{
                                 
@@ -90,15 +92,22 @@ class SearchResult2Controller: UIViewController, UITableViewDelegate, UITableVie
                         }
                     }
                 }
+                if isMatch == false {
+                    isFirstFilterFlag = false
+                    self.list.removeAll()
+                }
             }
             }
             
             if self.receiveStringPrice != "" {
+                print("Price")
             //同上
             if let prices = snapshot.childSnapshotForPath("price").children.allObjects as? [FIRDataSnapshot]{
+                var isMatch = false
                 for price in prices{
                     if let name = price.value!["name"] as? String{
                         if name == self.receiveStringPrice{
+                            isMatch = true
                             if let members = price.childSnapshotForPath("members").children.allObjects as? [FIRDataSnapshot]{
                                 var tmp = [String]()
                                 for member in members{
@@ -128,15 +137,22 @@ class SearchResult2Controller: UIViewController, UITableViewDelegate, UITableVie
                         }
                     }
                 }
+                if isMatch == false {
+                    isFirstFilterFlag = false
+                    self.list.removeAll()
+                }
             }
             }
             
             if self.receiveStringPlaceCity != "" {
+                print("City")
             //同上
             if let cities = snapshot.childSnapshotForPath("city").children.allObjects as? [FIRDataSnapshot]{
+                var isMatch = false
                 for city in cities{
                     if let name = city.value!["name"] as? String{
                         if name == self.receiveStringPlaceCity{
+                            isMatch = true
                             if let members = city.childSnapshotForPath("members").children.allObjects as? [FIRDataSnapshot]{
                                 var tmp = [String]()
                                 for member in members{
@@ -166,15 +182,22 @@ class SearchResult2Controller: UIViewController, UITableViewDelegate, UITableVie
                         }
                     }
                 }
+                if isMatch == false {
+                    isFirstFilterFlag = false
+                    self.list.removeAll()
+                }
             }
             }
             
             if self.receiveStringPlaceDistrict != "" {
+                print("District")
             //同上
             if let districts = snapshot.childSnapshotForPath("district").children.allObjects as? [FIRDataSnapshot]{
+                var isMatch = false
                 for district in districts{
                     if let name = district.value!["name"] as? String{
                         if name == self.receiveStringPlaceDistrict{
+                            isMatch = true
                             if let members = district.childSnapshotForPath("members").children.allObjects as? [FIRDataSnapshot]{
                                 var tmp = [String]()
                                 for member in members{
@@ -204,6 +227,10 @@ class SearchResult2Controller: UIViewController, UITableViewDelegate, UITableVie
                         }
                     }
                 }
+                if isMatch == false {
+                    isFirstFilterFlag = false
+                    self.list.removeAll()
+                }
             }
             }
             
@@ -223,7 +250,7 @@ class SearchResult2Controller: UIViewController, UITableViewDelegate, UITableVie
                 }
             }
             
-            if self.list.isEmpty || self.nameList.isEmpty || self.rankList.isEmpty {
+            if self.list.isEmpty {
                 self.result = "none"
             }
             //在ref的最後call tableview.reloadData即可讓畫面接著資料完整後更新
@@ -275,7 +302,9 @@ class SearchResult2Controller: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier("toRestaurant2", sender: self.list[indexPath.row])
+        if result != "none" {
+            performSegueWithIdentifier("toRestaurant2", sender: self.list[indexPath.row])
+        }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

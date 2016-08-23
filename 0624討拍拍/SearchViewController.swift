@@ -219,9 +219,12 @@ class SearchViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
                 if (placeArr.count == 1) {
                     secondVC.receiveStringPlaceCity = placeArr[0]
                     secondVC.receiveStringPlaceDistrict = ""
-                } else {
+                } else if (placeArr.count == 2) {
                     secondVC.receiveStringPlaceCity = placeArr[0]
                     secondVC.receiveStringPlaceDistrict = placeArr[1]
+                } else {
+                    secondVC.receiveStringPlaceCity = ""
+                    secondVC.receiveStringPlaceDistrict = ""
                 }
                 secondVC.receiveStringTime = timeTextField.text!
                 secondVC.receiveStringPrice = priceTextField.text!
