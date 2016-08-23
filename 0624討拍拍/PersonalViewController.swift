@@ -58,13 +58,13 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 
 
-//        let alert = UIAlertController(title: "您好", message: "内容陆续更新中", preferredStyle: UIAlertControllerStyle.Alert)
-//        alert.addAction(UIAlertAction(title: "😆😁😝", style: UIAlertActionStyle.Default, handler: nil))
-//        self.presentViewController(alert, animated: true, completion: nil)
+        let alert = UIAlertController(title: "您好", message: "内容陆续更新中", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "😆😁😝", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
         
-        let vcName = identities[indexPath.row]
+        /*let vcName = identities[indexPath.row]
         let viewController = storyboard?.instantiateViewControllerWithIdentifier(vcName)
-        self.navigationController?.pushViewController(viewController!, animated: true)
+        self.navigationController?.pushViewController(viewController!, animated: true)*/
         
     }
     
