@@ -47,13 +47,9 @@ class SpeakViewController: UIViewController,UITextFieldDelegate, UIPickerViewDat
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width / 3, height: self.view.frame.size.height))
         
         label.font = UIFont(name: "Helvetica", size: 12)
-        
         label.backgroundColor = UIColor.clearColor()
-        
         label.textColor = UIColor.whiteColor()
-        
         label.text = "搜尋選項"
-        
         label.textAlignment = NSTextAlignment.Center
         
         let textBtn = UIBarButtonItem(customView: label)

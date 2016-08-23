@@ -151,7 +151,6 @@ class SearchResultController: UIViewController, UITableViewDelegate, UITableView
          */
         if resultID[0] == "none" {
             
-            cell?.textLabel?.textColor = UIColor.lightGrayColor()
             cell?.textLabel?.text = "無搜尋結果"
             
         } else {
